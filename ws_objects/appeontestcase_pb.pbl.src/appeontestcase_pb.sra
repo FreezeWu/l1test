@@ -46,6 +46,7 @@ w_control 		gw_active
 
 
 end variables
+
 global type appeontestcase_pb from application
 string appname = "appeontestcase_pb"
 end type
@@ -115,13 +116,19 @@ if not isnull(li_rtn) and li_rtn = 1 then
 	if li_rtn = 64 then gb_64bit = true
 end if 
 
-// Profile testcase
-SQLCA.DBMS = "SNC SQL Native Client(OLE DB)"
-SQLCA.LogPass ="admin"
-SQLCA.ServerName = "192.0.2.254"
-SQLCA.LogId = "sa"
+//// Profile testcase
+//SQLCA.DBMS = "SNC SQL Native Client(OLE DB)"
+//SQLCA.LogPass ="admin"
+//SQLCA.ServerName = "192.0.2.254"
+//SQLCA.LogId = "sa"
+//SQLCA.AutoCommit = False
+//SQLCA.DBParm = "Database='appeontestcase',PBMaxTextSize=2147483647,TrimSpaces=0"
+
+// Profile appeontestcase
+SQLCA.DBMS = "ODBC"
 SQLCA.AutoCommit = False
-SQLCA.DBParm = "Database='appeontestcase',PBMaxTextSize=2147483647,TrimSpaces=0"
+SQLCA.DBParm = "ConnectString='DSN=appeontestcase;UID=sa;PWD=admin'"
+
 
 connect using sqlca;
 
