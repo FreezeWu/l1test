@@ -1,0 +1,10 @@
+﻿$PBExportHeader$p_create_ole_blob170303.srp
+$PBExportComments$Pipeline object to create a new table with an OLE Blob column
+PIPELINE(source_connect=OLE DB,destination_connect=OLE DB,type=create,commit=100,errors=100,keyname="ole_x2")
+SOURCE(name="ole",COLUMN(type=char,name="id",dbtype="char(20)",key=yes,nulls_allowed=no)
+ COLUMN(type=varchar,name="description",dbtype="varchar(8000)",nulls_allowed=no))
+RETRIEVE(statement="PBSELECT( VERSION(400) TABLE(NAME=~"ole~" ) COLUMN(NAME=~"ole.id~") COLUMN(NAME=~"ole.description~"))")
+DESTINATION(name="ole_copy",COLUMN(type=char,name="id",dbtype="char(20)",key=yes,nulls_allowed=no,initial_value="spaces")
+ COLUMN(type=varchar,name="description",dbtype="varchar(8000)",nulls_allowed=no,initial_value="spaces"))
+BLOB(source_table="dbo.ole",keylist="id",SOURCE_COLUMN(type=blob,name="object",dbtype="image")
+ DESTINATION_COLUMN(type=blob,name="object",dbtype="image"))

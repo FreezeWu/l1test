@@ -1,0 +1,14 @@
+﻿$PBExportHeader$iterable.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Iterable from nonvisualobject
+end type
+
+type variables
+ protected:
+string Iterable_javaname= "java.lang.Iterable" 
+end variables
+
+forward prototypes
+ public:
+function Iterator iterator()  alias for "iterator,()Ljava/util/Iterator;"
+end prototypes

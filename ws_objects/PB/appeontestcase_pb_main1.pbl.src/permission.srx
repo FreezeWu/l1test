@@ -1,0 +1,22 @@
+﻿$PBExportHeader$permission.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Permission from nonvisualobject
+end type
+
+type variables
+ protected:
+string Permission_javaname= "java.security.Permission" 
+end variables
+
+forward prototypes
+ public:
+subroutine  Permission( string string_1)  alias for "<init>,(Ljava/lang/String;)V"
+subroutine  checkGuard( any any_1) throws SecurityException alias for "checkGuard,(Ljava/lang/Object;)V"
+function boolean equals( any any_1)  alias for "equals,(Ljava/lang/Object;)Z"
+function string getActions()  alias for "getActions,()Ljava/lang/String;"
+function string getName()  alias for "getName,()Ljava/lang/String;"
+function long hashCode()  alias for "hashCode,()I"
+function boolean implies( Permission Permission_1)  alias for "implies,(Ljava/security/Permission;)Z"
+function PermissionCollection newPermissionCollection()  alias for "newPermissionCollection,()Ljava/security/PermissionCollection;"
+function string toString()  alias for "toString,()Ljava/lang/String;"
+end prototypes

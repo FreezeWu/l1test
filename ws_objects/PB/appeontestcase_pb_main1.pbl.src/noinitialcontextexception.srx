@@ -1,0 +1,15 @@
+﻿$PBExportHeader$noinitialcontextexception.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type NoInitialContextException from NamingException
+end type
+
+type variables
+ protected:
+string NoInitialContextException_javaname= "javax.naming.NoInitialContextException" 
+end variables
+
+forward prototypes
+ public:
+subroutine  NoInitialContextException()  alias for "<init>,()V"
+subroutine  NoInitialContextException( string string_1)  alias for "<init>,(Ljava/lang/String;)V"
+end prototypes

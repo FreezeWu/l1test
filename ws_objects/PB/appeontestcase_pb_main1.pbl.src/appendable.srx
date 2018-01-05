@@ -1,0 +1,16 @@
+﻿$PBExportHeader$appendable.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Appendable from nonvisualobject
+end type
+
+type variables
+ protected:
+string Appendable_javaname= "java.lang.Appendable" 
+end variables
+
+forward prototypes
+ public:
+function Appendable append( char char_1) throws IOException alias for "append,(C)Ljava/lang/Appendable;"
+function Appendable append( CharSequence CharSequence_1) throws IOException alias for "append,(Ljava/lang/CharSequence;)Ljava/lang/Appendable;"
+function Appendable append( CharSequence CharSequence_1, long long_2, long long_3) throws IOException alias for "append,(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;"
+end prototypes

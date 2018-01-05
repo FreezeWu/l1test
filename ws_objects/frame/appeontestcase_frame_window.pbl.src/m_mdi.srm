@@ -1,0 +1,379 @@
+﻿$PBExportHeader$m_mdi.srm
+forward
+global type m_mdi from menu
+end type
+type m_m from menu within m_mdi
+end type
+type m_executetestcase from menu within m_m
+end type
+type m_manage from menu within m_m
+end type
+type m_view from menu within m_m
+end type
+type m_m from menu within m_mdi
+m_executetestcase m_executetestcase
+m_manage m_manage
+m_view m_view
+end type
+type m_0 from menu within m_mdi
+end type
+type m_usermanager from menu within m_0
+end type
+type m_changpsw from menu within m_0
+end type
+type m_uploadtheresfile from menu within m_0
+end type
+type m_0 from menu within m_mdi
+m_usermanager m_usermanager
+m_changpsw m_changpsw
+m_uploadtheresfile m_uploadtheresfile
+end type
+type m_exit from menu within m_mdi
+end type
+global type m_mdi from menu
+m_m m_m
+m_0 m_0
+m_exit m_exit
+end type
+end forward
+
+global type m_mdi from menu
+m_m m_m
+m_0 m_0
+m_exit m_exit
+end type
+global m_mdi m_mdi
+
+forward prototypes
+public subroutine of_setenable ()
+end prototypes
+
+public subroutine of_setenable ();//加入权限控制manager菜单
+if gi_rightmode = 3 then
+	this.m_m.m_manage.enabled = false
+end if
+end subroutine
+
+on m_mdi.create
+m_mdi=this
+call super::create
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_m=create m_m
+this.m_0=create m_0
+this.m_exit=create m_exit
+this.Item[UpperBound(this.Item)+1]=this.m_m
+this.Item[UpperBound(this.Item)+1]=this.m_0
+this.Item[UpperBound(this.Item)+1]=this.m_exit
+end on
+
+on m_mdi.destroy
+call super::destroy
+destroy(this.m_m)
+destroy(this.m_0)
+destroy(this.m_exit)
+end on
+
+type m_m from menu within m_mdi
+m_executetestcase m_executetestcase
+m_manage m_manage
+m_view m_view
+end type
+
+on m_m.create
+call super::create
+this.text = "Operation"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_executetestcase=create m_executetestcase
+this.m_manage=create m_manage
+this.m_view=create m_view
+this.Item[UpperBound(this.Item)+1]=this.m_executetestcase
+this.Item[UpperBound(this.Item)+1]=this.m_manage
+this.Item[UpperBound(this.Item)+1]=this.m_view
+end on
+
+on m_m.destroy
+call super::destroy
+destroy(this.m_executetestcase)
+destroy(this.m_manage)
+destroy(this.m_view)
+end on
+
+type m_executetestcase from menu within m_m
+end type
+
+on m_executetestcase.create
+call super::create
+this.text = "Execute"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_executetestcase.destroy
+call super::destroy
+end on
+
+event clicked;opensheet(w_controller,parentwindow,0,original!)
+end event
+
+type m_manage from menu within m_m
+end type
+
+on m_manage.create
+call super::create
+this.text = "Manage"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_manage.destroy
+call super::destroy
+end on
+
+event clicked;opensheetwithparm(w_manager,"manager",parentwindow,0,original!)
+end event
+
+type m_view from menu within m_m
+end type
+
+on m_view.create
+call super::create
+this.text = "View"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_view.destroy
+call super::destroy
+end on
+
+event clicked;opensheetwithparm(w_manager,"view",parentwindow,0,original!)
+
+
+end event
+
+type m_0 from menu within m_mdi
+m_usermanager m_usermanager
+m_changpsw m_changpsw
+m_uploadtheresfile m_uploadtheresfile
+end type
+
+on m_0.create
+call super::create
+this.text = "User Info"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_usermanager=create m_usermanager
+this.m_changpsw=create m_changpsw
+this.m_uploadtheresfile=create m_uploadtheresfile
+this.Item[UpperBound(this.Item)+1]=this.m_usermanager
+this.Item[UpperBound(this.Item)+1]=this.m_changpsw
+this.Item[UpperBound(this.Item)+1]=this.m_uploadtheresfile
+end on
+
+on m_0.destroy
+call super::destroy
+destroy(this.m_usermanager)
+destroy(this.m_changpsw)
+destroy(this.m_uploadtheresfile)
+end on
+
+type m_usermanager from menu within m_0
+end type
+
+on m_usermanager.create
+call super::create
+this.text = "UserManager"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_usermanager.destroy
+call super::destroy
+end on
+
+event clicked;opensheet(w_user_manager,parentwindow,0,original!)
+end event
+
+type m_changpsw from menu within m_0
+end type
+
+on m_changpsw.create
+call super::create
+this.text = "ChangPSW"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_changpsw.destroy
+call super::destroy
+end on
+
+event clicked;open(w_changpass)
+end event
+
+type m_uploadtheresfile from menu within m_0
+end type
+
+event clicked;opensheet(w_uploadcaseresfile,parentwindow,0,original!)
+end event
+
+on m_uploadtheresfile.create
+call super::create
+this.text = "Upload the ResFile"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_uploadtheresfile.destroy
+call super::destroy
+end on
+
+type m_exit from menu within m_mdi
+end type
+
+event clicked;close(parentwindow)
+end event
+
+on m_exit.create
+call super::create
+this.text = "Exit"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_exit.destroy
+call super::destroy
+end on
+

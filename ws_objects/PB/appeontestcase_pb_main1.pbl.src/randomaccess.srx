@@ -1,0 +1,10 @@
+﻿$PBExportHeader$randomaccess.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type RandomAccess from nonvisualobject
+end type
+
+type variables
+ protected:
+string RandomAccess_javaname= "java.util.RandomAccess" 
+end variables
+

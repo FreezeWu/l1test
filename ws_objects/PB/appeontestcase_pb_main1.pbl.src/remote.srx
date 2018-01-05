@@ -1,0 +1,10 @@
+﻿$PBExportHeader$remote.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Remote from nonvisualobject
+end type
+
+type variables
+ protected:
+string Remote_javaname= "java.rmi.Remote" 
+end variables
+

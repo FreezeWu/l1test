@@ -1,0 +1,30 @@
+﻿$PBExportHeader$namingexception.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type NamingException from exception
+end type
+
+type variables
+ protected:
+string NamingException_javaname= "javax.naming.NamingException" 
+end variables
+
+forward prototypes
+ public:
+subroutine  NamingException()  alias for "<init>,()V"
+subroutine  NamingException( string string_1)  alias for "<init>,(Ljava/lang/String;)V"
+subroutine  appendRemainingComponent( string string_1)  alias for "appendRemainingComponent,(Ljava/lang/String;)V"
+subroutine  appendRemainingName( Name Name_1)  alias for "appendRemainingName,(Ljavax/naming/Name;)V"
+function java_Throwable getCause()  alias for "getCause,()Ljava/lang/Throwable;"
+function string getExplanation()  alias for "getExplanation,()Ljava/lang/String;"
+function Name getRemainingName()  alias for "getRemainingName,()Ljavax/naming/Name;"
+function Name getResolvedName()  alias for "getResolvedName,()Ljavax/naming/Name;"
+function any getResolvedObj()  alias for "getResolvedObj,()Ljava/lang/Object;"
+function java_Throwable getRootCause()  alias for "getRootCause,()Ljava/lang/Throwable;"
+function java_Throwable initCause( java_Throwable java_Throwable_1)  alias for "initCause,(Ljava/lang/Throwable;)Ljava/lang/Throwable;"
+subroutine  setRemainingName( Name Name_1)  alias for "setRemainingName,(Ljavax/naming/Name;)V"
+subroutine  setResolvedName( Name Name_1)  alias for "setResolvedName,(Ljavax/naming/Name;)V"
+subroutine  setResolvedObj( any any_1)  alias for "setResolvedObj,(Ljava/lang/Object;)V"
+subroutine  setRootCause( java_Throwable java_Throwable_1)  alias for "setRootCause,(Ljava/lang/Throwable;)V"
+function string toString()  alias for "toString,()Ljava/lang/String;"
+function string toString( boolean boolean_1)  alias for "toString,(Z)Ljava/lang/String;"
+end prototypes

@@ -1,0 +1,8 @@
+﻿$PBExportHeader$str_taba03_tab.srs
+global type str_taba03_tab from structure
+	integer		num
+	string		name
+	boolean		flag
+	datetime		timing
+end type
+

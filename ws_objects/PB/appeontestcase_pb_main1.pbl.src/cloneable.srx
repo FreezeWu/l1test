@@ -1,0 +1,10 @@
+﻿$PBExportHeader$cloneable.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Cloneable from nonvisualobject
+end type
+
+type variables
+ protected:
+string Cloneable_javaname= "java.lang.Cloneable" 
+end variables
+

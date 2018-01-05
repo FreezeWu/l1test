@@ -1,0 +1,19 @@
+﻿$PBExportHeader$gf_returnresult.srf
+global type gf_returnresult from function_object
+end type
+
+forward prototypes
+global subroutine gf_returnresult (string as_result)
+end prototypes
+
+global subroutine gf_returnresult (string as_result);//
+
+if isvalid(w_controller) then
+	If Len ( as_result ) > 2 And Right (as_result,2) = "~r~n" Then
+		as_result = Left ( as_result, Len ( as_result ) - 2 )
+	End If
+		
+	w_controller.wf_runtimeresult(as_result)
+end if
+end subroutine
+

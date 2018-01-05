@@ -1,0 +1,48 @@
+﻿$PBExportHeader$uri.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type URI from nonvisualobject
+end type
+
+type variables
+ protected:
+string URI_javaname= "java.net.URI" 
+end variables
+
+forward prototypes
+ public:
+subroutine  URI( string string_1) throws URISyntaxException alias for "<init>,(Ljava/lang/String;)V"
+subroutine  URI( string string_1, string string_2, string string_3) throws URISyntaxException alias for "<init>,(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+subroutine  URI( string string_1, string string_2, string string_3, long long_4, string string_5, string string_6, string string_7) throws URISyntaxException alias for "<init>,(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+subroutine  URI( string string_1, string string_2, string string_3, string string_4) throws URISyntaxException alias for "<init>,(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+subroutine  URI( string string_1, string string_2, string string_3, string string_4, string string_5) throws URISyntaxException alias for "<init>,(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+function long compareTo( any any_1)  alias for "compareTo,(Ljava/lang/Object;)I"
+function long compareTo( URI URI_1)  alias for "compareTo,(Ljava/net/URI;)I"
+function URI create( string string_1)  alias for "create,(Ljava/lang/String;)Ljava/net/URI;"
+function boolean equals( any any_1)  alias for "equals,(Ljava/lang/Object;)Z"
+function string getAuthority()  alias for "getAuthority,()Ljava/lang/String;"
+function string getFragment()  alias for "getFragment,()Ljava/lang/String;"
+function string getHost()  alias for "getHost,()Ljava/lang/String;"
+function string getPath()  alias for "getPath,()Ljava/lang/String;"
+function long getPort()  alias for "getPort,()I"
+function string getQuery()  alias for "getQuery,()Ljava/lang/String;"
+function string getRawAuthority()  alias for "getRawAuthority,()Ljava/lang/String;"
+function string getRawFragment()  alias for "getRawFragment,()Ljava/lang/String;"
+function string getRawPath()  alias for "getRawPath,()Ljava/lang/String;"
+function string getRawQuery()  alias for "getRawQuery,()Ljava/lang/String;"
+function string getRawSchemeSpecificPart()  alias for "getRawSchemeSpecificPart,()Ljava/lang/String;"
+function string getRawUserInfo()  alias for "getRawUserInfo,()Ljava/lang/String;"
+function string getScheme()  alias for "getScheme,()Ljava/lang/String;"
+function string getSchemeSpecificPart()  alias for "getSchemeSpecificPart,()Ljava/lang/String;"
+function string getUserInfo()  alias for "getUserInfo,()Ljava/lang/String;"
+function long hashCode()  alias for "hashCode,()I"
+function boolean isAbsolute()  alias for "isAbsolute,()Z"
+function boolean isOpaque()  alias for "isOpaque,()Z"
+function URI normalize()  alias for "normalize,()Ljava/net/URI;"
+function URI parseServerAuthority() throws URISyntaxException alias for "parseServerAuthority,()Ljava/net/URI;"
+function URI relativize( URI URI_1)  alias for "relativize,(Ljava/net/URI;)Ljava/net/URI;"
+function URI resolve( string string_1)  alias for "resolve,(Ljava/lang/String;)Ljava/net/URI;"
+function URI resolve( URI URI_1)  alias for "resolve,(Ljava/net/URI;)Ljava/net/URI;"
+function string toASCIIString()  alias for "toASCIIString,()Ljava/lang/String;"
+function string toString()  alias for "toString,()Ljava/lang/String;"
+function URL toURL() throws MalformedURLException alias for "toURL,()Ljava/net/URL;"
+end prototypes

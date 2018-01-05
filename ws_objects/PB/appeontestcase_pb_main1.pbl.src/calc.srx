@@ -1,0 +1,28 @@
+﻿$PBExportHeader$calc.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Calc from EJBObject
+end type
+
+type variables
+ protected:
+string Calc_javaname= "mytest.Calc" 
+end variables
+
+forward prototypes
+ public:
+function boolean IsAfterDate( datetime datetime_1) throws RemoteException alias for "IsAfterDate,(Ljava/util/Date;)Z"
+function double getDouble( double double_1) throws RemoteException alias for "getDouble,(D)D"
+function any getDouble3( any any_1) throws RemoteException alias for "getDouble3,([[[D)[[[D"
+function any getDoubleA( double double_1[]) throws RemoteException alias for "getDoubleA,([D)[D"
+function int getInt( int int_1) throws RemoteException alias for "getInt,(S)S"
+function any getIntA( int int_1[]) throws RemoteException alias for "getIntA,([S)[S"
+function long getLong( long long_1) throws RemoteException alias for "getLong,(I)I"
+function any getLong3( any any_1) throws RemoteException alias for "getLong3,([[[J)[[[J"
+function any getLongA( long long_1[]) throws RemoteException alias for "getLongA,([I)[I"
+function real getReal( real real_1) throws RemoteException alias for "getReal,(F)F"
+function any getRealA( real real_1[]) throws RemoteException alias for "getRealA,([F)[F"
+function long getUInt( long long_1) throws RemoteException alias for "getUInt,(I)I"
+function any getUIntA( long long_1[]) throws RemoteException alias for "getUIntA,([I)[I"
+function longlong getULong( longlong longlong_1) throws RemoteException alias for "getULong,(J)J"
+function any getULongA( longlong longlong_1[]) throws RemoteException alias for "getULongA,([J)[J"
+end prototypes

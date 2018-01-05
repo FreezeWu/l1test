@@ -1,0 +1,19 @@
+﻿$PBExportHeader$ejbmetadata.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type EJBMetaData from nonvisualobject
+end type
+
+type variables
+ protected:
+string EJBMetaData_javaname= "javax.ejb.EJBMetaData" 
+end variables
+
+forward prototypes
+ public:
+function EJBHome getEJBHome()  alias for "getEJBHome,()Ljavax/ejb/EJBHome;"
+function any getHomeInterfaceClass()  alias for "getHomeInterfaceClass,()Ljava/lang/Class;"
+function any getPrimaryKeyClass()  alias for "getPrimaryKeyClass,()Ljava/lang/Class;"
+function any getRemoteInterfaceClass()  alias for "getRemoteInterfaceClass,()Ljava/lang/Class;"
+function boolean isSession()  alias for "isSession,()Z"
+function boolean isStatelessSession()  alias for "isStatelessSession,()Z"
+end prototypes

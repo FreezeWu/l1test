@@ -1,0 +1,19 @@
+﻿$PBExportHeader$queue.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Queue from Collection
+end type
+
+type variables
+ protected:
+string Queue_javaname= "java.util.Queue" 
+end variables
+
+forward prototypes
+ public:
+function boolean add( any any_1)  alias for "add,(Ljava/lang/Object;)Z"
+function any element()  alias for "element,()Ljava/lang/Object;"
+function boolean offer( any any_1)  alias for "offer,(Ljava/lang/Object;)Z"
+function any peek()  alias for "peek,()Ljava/lang/Object;"
+function any poll()  alias for "poll,()Ljava/lang/Object;"
+function any remove()  alias for "remove,()Ljava/lang/Object;"
+end prototypes

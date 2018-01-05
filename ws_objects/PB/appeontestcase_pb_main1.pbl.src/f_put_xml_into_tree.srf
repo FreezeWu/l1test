@@ -1,0 +1,33 @@
+﻿$PBExportHeader$f_put_xml_into_tree.srf
+global type f_put_xml_into_tree from function_object
+end type
+
+forward prototypes
+global subroutine f_put_xml_into_tree (pbdom_object pbdom_to_be_expanded, long ll_level, ref treeview tv_1, ref longlong item_count)
+end prototypes
+
+global subroutine f_put_xml_into_tree (pbdom_object pbdom_to_be_expanded, long ll_level, ref treeview tv_1, ref longlong item_count);string ls_class, ls_item
+PBDOM_OBJECT pbdom_obj_array[]
+long ll_loop, ll_handle
+
+//Get content of object
+pbdom_to_be_expanded.GetContent(ref pbdom_obj_array)
+//Loop through content and for each content, get its content
+if upperbound(pbdom_obj_array) > 1 then
+	for ll_loop = 1 to upperbound(pbdom_obj_array)
+		yield()
+		//if ll_level = 0 then w_1.setmicrohelp('Processing node '+string(ll_loop)+' ...')
+		ls_class = pbdom_obj_array[ll_loop].getobjectclassstring()
+		if ls_class = 'pbdom_element' then
+			ls_item = pbdom_obj_array[ll_loop].getname()+': '+pbdom_obj_array[ll_loop].gettext()
+			ll_handle = tv_1.insertitemlast(ll_level,ls_item,ll_loop)
+			item_count ++
+			f_put_xml_into_tree(pbdom_obj_array[ll_loop], ll_handle, tv_1,item_count)
+			tv_1.expanditem(ll_handle)
+		end if
+	next
+end if
+
+
+end subroutine
+

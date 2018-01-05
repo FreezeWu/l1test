@@ -1,0 +1,41 @@
+﻿$PBExportHeader$url.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type URL from nonvisualobject
+end type
+
+type variables
+ protected:
+string URL_javaname= "java.net.URL" 
+end variables
+
+forward prototypes
+ public:
+subroutine  URL( string string_1) throws MalformedURLException alias for "<init>,(Ljava/lang/String;)V"
+subroutine  URL( string string_1, string string_2, long long_3, string string_4) throws MalformedURLException alias for "<init>,(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V"
+subroutine  URL( string string_1, string string_2, long long_3, string string_4, URLStreamHandler URLStreamHandler_5) throws MalformedURLException alias for "<init>,(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/net/URLStreamHandler;)V"
+subroutine  URL( string string_1, string string_2, string string_3) throws MalformedURLException alias for "<init>,(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+subroutine  URL( URL URL_1, string string_2) throws MalformedURLException alias for "<init>,(Ljava/net/URL;Ljava/lang/String;)V"
+subroutine  URL( URL URL_1, string string_2, URLStreamHandler URLStreamHandler_3) throws MalformedURLException alias for "<init>,(Ljava/net/URL;Ljava/lang/String;Ljava/net/URLStreamHandler;)V"
+function boolean equals( any any_1)  alias for "equals,(Ljava/lang/Object;)Z"
+function string getAuthority()  alias for "getAuthority,()Ljava/lang/String;"
+function any getContent() throws IOException alias for "getContent,()Ljava/lang/Object;"
+function any getContent( any any_1[]) throws IOException alias for "getContent,([Ljava/lang/Class;)Ljava/lang/Object;"
+function long getDefaultPort()  alias for "getDefaultPort,()I"
+function string getFile()  alias for "getFile,()Ljava/lang/String;"
+function string getHost()  alias for "getHost,()Ljava/lang/String;"
+function string getPath()  alias for "getPath,()Ljava/lang/String;"
+function long getPort()  alias for "getPort,()I"
+function string getProtocol()  alias for "getProtocol,()Ljava/lang/String;"
+function string getQuery()  alias for "getQuery,()Ljava/lang/String;"
+function string getRef()  alias for "getRef,()Ljava/lang/String;"
+function string getUserInfo()  alias for "getUserInfo,()Ljava/lang/String;"
+function long hashCode()  alias for "hashCode,()I"
+function URLConnection openConnection() throws IOException alias for "openConnection,()Ljava/net/URLConnection;"
+function URLConnection openConnection( Proxy Proxy_1) throws IOException alias for "openConnection,(Ljava/net/Proxy;)Ljava/net/URLConnection;"
+function InputStream openStream() throws IOException alias for "openStream,()Ljava/io/InputStream;"
+function boolean sameFile( URL URL_1)  alias for "sameFile,(Ljava/net/URL;)Z"
+subroutine  setURLStreamHandlerFactory( URLStreamHandlerFactory URLStreamHandlerFactory_1)  alias for "setURLStreamHandlerFactory,(Ljava/net/URLStreamHandlerFactory;)V"
+function string toExternalForm()  alias for "toExternalForm,()Ljava/lang/String;"
+function string toString()  alias for "toString,()Ljava/lang/String;"
+function URI toURI() throws URISyntaxException alias for "toURI,()Ljava/net/URI;"
+end prototypes

@@ -1,0 +1,109 @@
+﻿$PBExportHeader$locale.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Locale from nonvisualobject
+end type
+
+type variables
+ protected:
+string Locale_javaname= "java.util.Locale" 
+Locale i__Locale__Locale
+
+ public:
+indirect Locale CANADA { __set_CANADA(*value), __get_CANADA() }
+indirect Locale CANADA_FRENCH { __set_CANADA_FRENCH(*value), __get_CANADA_FRENCH() }
+indirect Locale CHINA { __set_CHINA(*value), __get_CHINA() }
+indirect Locale CHINESE { __set_CHINESE(*value), __get_CHINESE() }
+indirect Locale ENGLISH { __set_ENGLISH(*value), __get_ENGLISH() }
+indirect Locale FRANCE { __set_FRANCE(*value), __get_FRANCE() }
+indirect Locale FRENCH { __set_FRENCH(*value), __get_FRENCH() }
+indirect Locale GERMAN { __set_GERMAN(*value), __get_GERMAN() }
+indirect Locale GERMANY { __set_GERMANY(*value), __get_GERMANY() }
+indirect Locale ITALIAN { __set_ITALIAN(*value), __get_ITALIAN() }
+indirect Locale ITALY { __set_ITALY(*value), __get_ITALY() }
+indirect Locale JAPAN { __set_JAPAN(*value), __get_JAPAN() }
+indirect Locale JAPANESE { __set_JAPANESE(*value), __get_JAPANESE() }
+indirect Locale KOREA { __set_KOREA(*value), __get_KOREA() }
+indirect Locale KOREAN { __set_KOREAN(*value), __get_KOREAN() }
+indirect Locale PRC { __set_PRC(*value), __get_PRC() }
+indirect Locale ROOT { __set_ROOT(*value), __get_ROOT() }
+indirect Locale SIMPLIFIED_CHINESE { __set_SIMPLIFIED_CHINESE(*value), __get_SIMPLIFIED_CHINESE() }
+indirect Locale TAIWAN { __set_TAIWAN(*value), __get_TAIWAN() }
+indirect Locale TRADITIONAL_CHINESE { __set_TRADITIONAL_CHINESE(*value), __get_TRADITIONAL_CHINESE() }
+indirect Locale UK { __set_UK(*value), __get_UK() }
+indirect Locale US { __set_US(*value), __get_US() }
+end variables
+
+forward prototypes
+ private:
+function Locale __get_ENGLISH()  alias for "R:ENGLISH,Ljava/util/Locale;"
+subroutine  __set_ENGLISH( Locale ENGLISH)  alias for "W:ENGLISH,Ljava/util/Locale;"
+function Locale __get_FRENCH()  alias for "R:FRENCH,Ljava/util/Locale;"
+subroutine  __set_FRENCH( Locale FRENCH)  alias for "W:FRENCH,Ljava/util/Locale;"
+function Locale __get_GERMAN()  alias for "R:GERMAN,Ljava/util/Locale;"
+subroutine  __set_GERMAN( Locale GERMAN)  alias for "W:GERMAN,Ljava/util/Locale;"
+function Locale __get_ITALIAN()  alias for "R:ITALIAN,Ljava/util/Locale;"
+subroutine  __set_ITALIAN( Locale ITALIAN)  alias for "W:ITALIAN,Ljava/util/Locale;"
+function Locale __get_JAPANESE()  alias for "R:JAPANESE,Ljava/util/Locale;"
+subroutine  __set_JAPANESE( Locale JAPANESE)  alias for "W:JAPANESE,Ljava/util/Locale;"
+function Locale __get_KOREAN()  alias for "R:KOREAN,Ljava/util/Locale;"
+subroutine  __set_KOREAN( Locale KOREAN)  alias for "W:KOREAN,Ljava/util/Locale;"
+function Locale __get_CHINESE()  alias for "R:CHINESE,Ljava/util/Locale;"
+subroutine  __set_CHINESE( Locale CHINESE)  alias for "W:CHINESE,Ljava/util/Locale;"
+function Locale __get_SIMPLIFIED_CHINESE()  alias for "R:SIMPLIFIED_CHINESE,Ljava/util/Locale;"
+subroutine  __set_SIMPLIFIED_CHINESE( Locale SIMPLIFIED_CHINESE)  alias for "W:SIMPLIFIED_CHINESE,Ljava/util/Locale;"
+function Locale __get_TRADITIONAL_CHINESE()  alias for "R:TRADITIONAL_CHINESE,Ljava/util/Locale;"
+subroutine  __set_TRADITIONAL_CHINESE( Locale TRADITIONAL_CHINESE)  alias for "W:TRADITIONAL_CHINESE,Ljava/util/Locale;"
+function Locale __get_FRANCE()  alias for "R:FRANCE,Ljava/util/Locale;"
+subroutine  __set_FRANCE( Locale FRANCE)  alias for "W:FRANCE,Ljava/util/Locale;"
+function Locale __get_GERMANY()  alias for "R:GERMANY,Ljava/util/Locale;"
+subroutine  __set_GERMANY( Locale GERMANY)  alias for "W:GERMANY,Ljava/util/Locale;"
+function Locale __get_ITALY()  alias for "R:ITALY,Ljava/util/Locale;"
+subroutine  __set_ITALY( Locale ITALY)  alias for "W:ITALY,Ljava/util/Locale;"
+function Locale __get_JAPAN()  alias for "R:JAPAN,Ljava/util/Locale;"
+subroutine  __set_JAPAN( Locale JAPAN)  alias for "W:JAPAN,Ljava/util/Locale;"
+function Locale __get_KOREA()  alias for "R:KOREA,Ljava/util/Locale;"
+subroutine  __set_KOREA( Locale KOREA)  alias for "W:KOREA,Ljava/util/Locale;"
+function Locale __get_CHINA()  alias for "R:CHINA,Ljava/util/Locale;"
+subroutine  __set_CHINA( Locale CHINA)  alias for "W:CHINA,Ljava/util/Locale;"
+function Locale __get_PRC()  alias for "R:PRC,Ljava/util/Locale;"
+subroutine  __set_PRC( Locale PRC)  alias for "W:PRC,Ljava/util/Locale;"
+function Locale __get_TAIWAN()  alias for "R:TAIWAN,Ljava/util/Locale;"
+subroutine  __set_TAIWAN( Locale TAIWAN)  alias for "W:TAIWAN,Ljava/util/Locale;"
+function Locale __get_UK()  alias for "R:UK,Ljava/util/Locale;"
+subroutine  __set_UK( Locale UK)  alias for "W:UK,Ljava/util/Locale;"
+function Locale __get_US()  alias for "R:US,Ljava/util/Locale;"
+subroutine  __set_US( Locale US)  alias for "W:US,Ljava/util/Locale;"
+function Locale __get_CANADA()  alias for "R:CANADA,Ljava/util/Locale;"
+subroutine  __set_CANADA( Locale CANADA)  alias for "W:CANADA,Ljava/util/Locale;"
+function Locale __get_CANADA_FRENCH()  alias for "R:CANADA_FRENCH,Ljava/util/Locale;"
+subroutine  __set_CANADA_FRENCH( Locale CANADA_FRENCH)  alias for "W:CANADA_FRENCH,Ljava/util/Locale;"
+function Locale __get_ROOT()  alias for "R:ROOT,Ljava/util/Locale;"
+subroutine  __set_ROOT( Locale ROOT)  alias for "W:ROOT,Ljava/util/Locale;"
+
+ public:
+subroutine  Locale( string string_1)  alias for "<init>,(Ljava/lang/String;)V"
+subroutine  Locale( string string_1, string string_2)  alias for "<init>,(Ljava/lang/String;Ljava/lang/String;)V"
+subroutine  Locale( string string_1, string string_2, string string_3)  alias for "<init>,(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+function any clone()  alias for "clone,()Ljava/lang/Object;"
+function boolean equals( any any_1)  alias for "equals,(Ljava/lang/Object;)Z"
+function any getAvailableLocales()  alias for "getAvailableLocales,()[Ljava/util/Locale;|Locale"
+function string getCountry()  alias for "getCountry,()Ljava/lang/String;"
+function Locale getDefault()  alias for "getDefault,()Ljava/util/Locale;"
+function string getDisplayCountry()  alias for "getDisplayCountry,()Ljava/lang/String;"
+function string getDisplayCountry( Locale Locale_1)  alias for "getDisplayCountry,(Ljava/util/Locale;)Ljava/lang/String;"
+function string getDisplayLanguage()  alias for "getDisplayLanguage,()Ljava/lang/String;"
+function string getDisplayLanguage( Locale Locale_1)  alias for "getDisplayLanguage,(Ljava/util/Locale;)Ljava/lang/String;"
+function string getDisplayName()  alias for "getDisplayName,()Ljava/lang/String;"
+function string getDisplayName( Locale Locale_1)  alias for "getDisplayName,(Ljava/util/Locale;)Ljava/lang/String;"
+function string getDisplayVariant()  alias for "getDisplayVariant,()Ljava/lang/String;"
+function string getDisplayVariant( Locale Locale_1)  alias for "getDisplayVariant,(Ljava/util/Locale;)Ljava/lang/String;"
+function string getISO3Country() throws MissingResourceException alias for "getISO3Country,()Ljava/lang/String;"
+function string getISO3Language() throws MissingResourceException alias for "getISO3Language,()Ljava/lang/String;"
+function any getISOCountries()  alias for "getISOCountries,()[Ljava/lang/String;"
+function any getISOLanguages()  alias for "getISOLanguages,()[Ljava/lang/String;"
+function string getLanguage()  alias for "getLanguage,()Ljava/lang/String;"
+function string getVariant()  alias for "getVariant,()Ljava/lang/String;"
+function long hashCode()  alias for "hashCode,()I"
+subroutine  setDefault( Locale Locale_1)  alias for "setDefault,(Ljava/util/Locale;)V"
+function string toString()  alias for "toString,()Ljava/lang/String;"
+end prototypes

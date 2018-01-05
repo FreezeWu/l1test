@@ -1,0 +1,27 @@
+﻿$PBExportHeader$map.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Map from nonvisualobject
+end type
+
+type variables
+ protected:
+string Map_javaname= "java.util.Map" 
+end variables
+
+forward prototypes
+ public:
+subroutine  clear()  alias for "clear,()V"
+function boolean containsKey( any any_1)  alias for "containsKey,(Ljava/lang/Object;)Z"
+function boolean containsValue( any any_1)  alias for "containsValue,(Ljava/lang/Object;)Z"
+function Set entrySet()  alias for "entrySet,()Ljava/util/Set;"
+function boolean equals( any any_1)  alias for "equals,(Ljava/lang/Object;)Z"
+function any get( any any_1)  alias for "get,(Ljava/lang/Object;)Ljava/lang/Object;"
+function long hashCode()  alias for "hashCode,()I"
+function boolean isEmpty()  alias for "isEmpty,()Z"
+function Set keySet()  alias for "keySet,()Ljava/util/Set;"
+function any put( any any_1, any any_2)  alias for "put,(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+subroutine  putAll( Map Map_1)  alias for "putAll,(Ljava/util/Map;)V"
+function any remove( any any_1)  alias for "remove,(Ljava/lang/Object;)Ljava/lang/Object;"
+function long size()  alias for "size,()I"
+function Collection values()  alias for "values,()Ljava/util/Collection;"
+end prototypes

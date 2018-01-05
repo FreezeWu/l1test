@@ -1,0 +1,18 @@
+﻿$PBExportHeader$ejbobject.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type EJBObject from Remote
+end type
+
+type variables
+ protected:
+string EJBObject_javaname= "javax.ejb.EJBObject" 
+end variables
+
+forward prototypes
+ public:
+function EJBHome getEJBHome() throws RemoteException alias for "getEJBHome,()Ljavax/ejb/EJBHome;"
+function Handle getHandle() throws RemoteException alias for "getHandle,()Ljavax/ejb/Handle;"
+function any getPrimaryKey() throws RemoteException alias for "getPrimaryKey,()Ljava/lang/Object;"
+function boolean isIdentical( EJBObject EJBObject_1) throws RemoteException alias for "isIdentical,(Ljavax/ejb/EJBObject;)Z"
+subroutine  remove() throws RemoteException, RemoveException alias for "remove,()V"
+end prototypes

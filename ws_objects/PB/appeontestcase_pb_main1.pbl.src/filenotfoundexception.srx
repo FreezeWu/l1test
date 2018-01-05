@@ -1,0 +1,15 @@
+﻿$PBExportHeader$filenotfoundexception.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type FileNotFoundException from IOException
+end type
+
+type variables
+ protected:
+string FileNotFoundException_javaname= "java.io.FileNotFoundException" 
+end variables
+
+forward prototypes
+ public:
+subroutine  FileNotFoundException()  alias for "<init>,()V"
+subroutine  FileNotFoundException( string string_1)  alias for "<init>,(Ljava/lang/String;)V"
+end prototypes

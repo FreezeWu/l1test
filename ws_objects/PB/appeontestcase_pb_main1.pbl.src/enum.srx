@@ -1,0 +1,22 @@
+﻿$PBExportHeader$enum.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Enum from nonvisualobject
+end type
+
+type variables
+ protected:
+string Enum_javaname= "java.lang.Enum" 
+end variables
+
+forward prototypes
+ public:
+function long compareTo( Enum Enum_1)  alias for "compareTo,(Ljava/lang/Enum;)I"
+function long compareTo( any any_1)  alias for "compareTo,(Ljava/lang/Object;)I"
+function boolean equals( any any_1)  alias for "equals,(Ljava/lang/Object;)Z"
+function any getDeclaringClass()  alias for "getDeclaringClass,()Ljava/lang/Class;"
+function long hashCode()  alias for "hashCode,()I"
+function string name()  alias for "name,()Ljava/lang/String;"
+function long ordinal()  alias for "ordinal,()I"
+function string toString()  alias for "toString,()Ljava/lang/String;"
+function Enum valueOf( any any_1, string string_2)  alias for "valueOf,(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;"
+end prototypes

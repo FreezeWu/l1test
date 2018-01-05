@@ -1,0 +1,12 @@
+﻿$PBExportHeader$appeongetclienttype.srf
+global type appeongetclienttype from function_object
+end type
+
+forward prototypes
+global function string appeongetclienttype ()
+end prototypes
+
+global function string appeongetclienttype ();//
+return "PB"
+end function
+

@@ -1,0 +1,23 @@
+﻿$PBExportHeader$writer.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Writer from nonvisualobject
+end type
+
+type variables
+ protected:
+string Writer_javaname= "java.io.Writer" 
+end variables
+
+forward prototypes
+ public:
+function Appendable append( char char_1) throws IOException alias for "append,(C)Ljava/lang/Appendable;"
+function Appendable append( CharSequence CharSequence_1) throws IOException alias for "append,(Ljava/lang/CharSequence;)Ljava/lang/Appendable;"
+function Appendable append( CharSequence CharSequence_1, long long_2, long long_3) throws IOException alias for "append,(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;"
+subroutine  close() throws IOException alias for "close,()V"
+subroutine  flush() throws IOException alias for "flush,()V"
+subroutine  write( long long_1) throws IOException alias for "write,(I)V"
+subroutine  write( string string_1) throws IOException alias for "write,(Ljava/lang/String;)V"
+subroutine  write( string string_1, long long_2, long long_3) throws IOException alias for "write,(Ljava/lang/String;II)V"
+subroutine  write( char char_1[]) throws IOException alias for "write,([C)V"
+subroutine  write( char char_1[], long long_2, long long_3) throws IOException alias for "write,([CII)V"
+end prototypes

@@ -1,0 +1,84 @@
+﻿$PBExportHeader$file.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type File from nonvisualobject
+end type
+
+type variables
+ protected:
+string File_javaname= "java.io.File" 
+File i__File__File
+
+ public:
+indirect string pathSeparator { __set_pathSeparator(*value), __get_pathSeparator() }
+indirect char pathSeparatorChar { __set_pathSeparatorChar(*value), __get_pathSeparatorChar() }
+indirect string separator { __set_separator(*value), __get_separator() }
+indirect char separatorChar { __set_separatorChar(*value), __get_separatorChar() }
+end variables
+
+forward prototypes
+ private:
+function char __get_separatorChar()  alias for "R:separatorChar,C"
+subroutine  __set_separatorChar( char separatorChar)  alias for "W:separatorChar,C"
+function string __get_separator()  alias for "R:separator,Ljava/lang/String;"
+subroutine  __set_separator( string separator)  alias for "W:separator,Ljava/lang/String;"
+function char __get_pathSeparatorChar()  alias for "R:pathSeparatorChar,C"
+subroutine  __set_pathSeparatorChar( char pathSeparatorChar)  alias for "W:pathSeparatorChar,C"
+function string __get_pathSeparator()  alias for "R:pathSeparator,Ljava/lang/String;"
+subroutine  __set_pathSeparator( string pathSeparator)  alias for "W:pathSeparator,Ljava/lang/String;"
+
+ public:
+subroutine  File( File File_1, string string_2)  alias for "<init>,(Ljava/io/File;Ljava/lang/String;)V"
+subroutine  File( string string_1)  alias for "<init>,(Ljava/lang/String;)V"
+subroutine  File( string string_1, string string_2)  alias for "<init>,(Ljava/lang/String;Ljava/lang/String;)V"
+subroutine  File( URI URI_1)  alias for "<init>,(Ljava/net/URI;)V"
+function boolean canExecute()  alias for "canExecute,()Z"
+function boolean canRead()  alias for "canRead,()Z"
+function boolean canWrite()  alias for "canWrite,()Z"
+function long compareTo( File File_1)  alias for "compareTo,(Ljava/io/File;)I"
+function long compareTo( any any_1)  alias for "compareTo,(Ljava/lang/Object;)I"
+function boolean createNewFile() throws IOException alias for "createNewFile,()Z"
+function File createTempFile( string string_1, string string_2) throws IOException alias for "createTempFile,(Ljava/lang/String;Ljava/lang/String;)Ljava/io/File;"
+function File createTempFile( string string_1, string string_2, File File_3) throws IOException alias for "createTempFile,(Ljava/lang/String;Ljava/lang/String;Ljava/io/File;)Ljava/io/File;"
+subroutine  deleteOnExit()  alias for "deleteOnExit,()V"
+function boolean delete_j()  alias for "delete,()Z"
+function boolean equals( any any_1)  alias for "equals,(Ljava/lang/Object;)Z"
+function boolean exists()  alias for "exists,()Z"
+function File getAbsoluteFile()  alias for "getAbsoluteFile,()Ljava/io/File;"
+function string getAbsolutePath()  alias for "getAbsolutePath,()Ljava/lang/String;"
+function File getCanonicalFile() throws IOException alias for "getCanonicalFile,()Ljava/io/File;"
+function string getCanonicalPath() throws IOException alias for "getCanonicalPath,()Ljava/lang/String;"
+function longlong getFreeSpace()  alias for "getFreeSpace,()J"
+function string getName()  alias for "getName,()Ljava/lang/String;"
+function File getParentFile()  alias for "getParentFile,()Ljava/io/File;"
+function string getParent_j()  alias for "getParent,()Ljava/lang/String;"
+function string getPath()  alias for "getPath,()Ljava/lang/String;"
+function longlong getTotalSpace()  alias for "getTotalSpace,()J"
+function longlong getUsableSpace()  alias for "getUsableSpace,()J"
+function long hashCode()  alias for "hashCode,()I"
+function boolean isAbsolute()  alias for "isAbsolute,()Z"
+function boolean isDirectory()  alias for "isDirectory,()Z"
+function boolean isFile()  alias for "isFile,()Z"
+function boolean isHidden()  alias for "isHidden,()Z"
+function longlong lastModified()  alias for "lastModified,()J"
+function longlong length()  alias for "length,()J"
+function any list()  alias for "list,()[Ljava/lang/String;"
+function any list( FilenameFilter FilenameFilter_1)  alias for "list,(Ljava/io/FilenameFilter;)[Ljava/lang/String;"
+function any listFiles()  alias for "listFiles,()[Ljava/io/File;|File"
+function any listFiles( FileFilter FileFilter_1)  alias for "listFiles,(Ljava/io/FileFilter;)[Ljava/io/File;|File"
+function any listFiles( FilenameFilter FilenameFilter_1)  alias for "listFiles,(Ljava/io/FilenameFilter;)[Ljava/io/File;|File"
+function any listRoots()  alias for "listRoots,()[Ljava/io/File;|File"
+function boolean mkdir()  alias for "mkdir,()Z"
+function boolean mkdirs()  alias for "mkdirs,()Z"
+function boolean renameTo( File File_1)  alias for "renameTo,(Ljava/io/File;)Z"
+function boolean setExecutable( boolean boolean_1)  alias for "setExecutable,(Z)Z"
+function boolean setExecutable( boolean boolean_1, boolean boolean_2)  alias for "setExecutable,(ZZ)Z"
+function boolean setLastModified( longlong longlong_1)  alias for "setLastModified,(J)Z"
+function boolean setReadOnly()  alias for "setReadOnly,()Z"
+function boolean setReadable( boolean boolean_1)  alias for "setReadable,(Z)Z"
+function boolean setReadable( boolean boolean_1, boolean boolean_2)  alias for "setReadable,(ZZ)Z"
+function boolean setWritable( boolean boolean_1)  alias for "setWritable,(Z)Z"
+function boolean setWritable( boolean boolean_1, boolean boolean_2)  alias for "setWritable,(ZZ)Z"
+function string toString()  alias for "toString,()Ljava/lang/String;"
+function URI toURI()  alias for "toURI,()Ljava/net/URI;"
+function URL toURL() throws MalformedURLException alias for "toURL,()Ljava/net/URL;"
+end prototypes

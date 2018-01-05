@@ -1,0 +1,11 @@
+*** Starting JVM Logging ***
+
+[Dynamic-linking native method java.net.SocketInputStream.init ... JNI]
+[Dynamic-linking native method java.net.SocketOutputStream.init ... JNI]
+[Dynamic-linking native method java.net.SocketOutputStream.socketWrite0 ... JNI]
+[Dynamic-linking native method java.net.SocketInputStream.socketRead0 ... JNI]
+[Dynamic-linking native method java.io.ObjectInputStream.latestUserDefinedLoader ... JNI]
+[Dynamic-linking native method java.lang.Class.isInstance ... JNI]
+[Dynamic-linking native method sun.reflect.NativeMethodAccessorImpl.invoke0 ... JNI]
+[Dynamic-linking native method java.io.ObjectStreamClass.hasStaticInitializer ... JNI]
+[Dynamic-linking native method java.lang.Float.intBitsToFloat ... JNI]

@@ -1,0 +1,28 @@
+﻿$PBExportHeader$abstractlist.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type AbstractList from AbstractCollection
+end type
+
+type variables
+ protected:
+string AbstractList_javaname= "java.util.AbstractList" 
+end variables
+
+forward prototypes
+ public:
+subroutine  add( long long_1, any any_2)  alias for "add,(ILjava/lang/Object;)V"
+function boolean add( any any_1)  alias for "add,(Ljava/lang/Object;)Z"
+function boolean addAll( long long_1, Collection Collection_2)  alias for "addAll,(ILjava/util/Collection;)Z"
+subroutine  clear()  alias for "clear,()V"
+function boolean equals( any any_1)  alias for "equals,(Ljava/lang/Object;)Z"
+function any get( long long_1)  alias for "get,(I)Ljava/lang/Object;"
+function long hashCode()  alias for "hashCode,()I"
+function long indexOf( any any_1)  alias for "indexOf,(Ljava/lang/Object;)I"
+function Iterator iterator()  alias for "iterator,()Ljava/util/Iterator;"
+function long lastIndexOf( any any_1)  alias for "lastIndexOf,(Ljava/lang/Object;)I"
+function ListIterator listIterator()  alias for "listIterator,()Ljava/util/ListIterator;"
+function ListIterator listIterator( long long_1)  alias for "listIterator,(I)Ljava/util/ListIterator;"
+function any remove( long long_1)  alias for "remove,(I)Ljava/lang/Object;"
+function any set( long long_1, any any_2)  alias for "set,(ILjava/lang/Object;)Ljava/lang/Object;"
+function List subList( long long_1, long long_2)  alias for "subList,(II)Ljava/util/List;"
+end prototypes

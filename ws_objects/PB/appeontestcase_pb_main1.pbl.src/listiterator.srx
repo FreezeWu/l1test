@@ -1,0 +1,22 @@
+﻿$PBExportHeader$listiterator.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type ListIterator from Iterator
+end type
+
+type variables
+ protected:
+string ListIterator_javaname= "java.util.ListIterator" 
+end variables
+
+forward prototypes
+ public:
+subroutine  add( any any_1)  alias for "add,(Ljava/lang/Object;)V"
+function boolean hasNext()  alias for "hasNext,()Z"
+function boolean hasPrevious()  alias for "hasPrevious,()Z"
+function long nextIndex()  alias for "nextIndex,()I"
+function any next_j()  alias for "next,()Ljava/lang/Object;"
+function any previous()  alias for "previous,()Ljava/lang/Object;"
+function long previousIndex()  alias for "previousIndex,()I"
+subroutine  remove()  alias for "remove,()V"
+subroutine  set( any any_1)  alias for "set,(Ljava/lang/Object;)V"
+end prototypes

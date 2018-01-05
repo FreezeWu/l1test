@@ -1,0 +1,51 @@
+﻿$PBExportHeader$printstream.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type PrintStream from FilterOutputStream
+end type
+
+type variables
+ protected:
+string PrintStream_javaname= "java.io.PrintStream" 
+end variables
+
+forward prototypes
+ public:
+subroutine  PrintStream( File File_1) throws FileNotFoundException alias for "<init>,(Ljava/io/File;)V"
+subroutine  PrintStream( File File_1, string string_2) throws FileNotFoundException, UnsupportedEncodingException alias for "<init>,(Ljava/io/File;Ljava/lang/String;)V"
+subroutine  PrintStream( OutputStream OutputStream_1)  alias for "<init>,(Ljava/io/OutputStream;)V"
+subroutine  PrintStream( OutputStream OutputStream_1, boolean boolean_2)  alias for "<init>,(Ljava/io/OutputStream;Z)V"
+subroutine  PrintStream( OutputStream OutputStream_1, boolean boolean_2, string string_3) throws UnsupportedEncodingException alias for "<init>,(Ljava/io/OutputStream;ZLjava/lang/String;)V"
+subroutine  PrintStream( string string_1) throws FileNotFoundException alias for "<init>,(Ljava/lang/String;)V"
+subroutine  PrintStream( string string_1, string string_2) throws FileNotFoundException, UnsupportedEncodingException alias for "<init>,(Ljava/lang/String;Ljava/lang/String;)V"
+function Appendable append( char char_1) throws IOException alias for "append,(C)Ljava/lang/Appendable;"
+function Appendable append( CharSequence CharSequence_1) throws IOException alias for "append,(Ljava/lang/CharSequence;)Ljava/lang/Appendable;"
+function Appendable append( CharSequence CharSequence_1, long long_2, long long_3) throws IOException alias for "append,(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;"
+function boolean checkError()  alias for "checkError,()Z"
+subroutine  close()  alias for "close,()V"
+subroutine  flush()  alias for "flush,()V"
+function PrintStream format( string string_1, any any_2[])  alias for "format,(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;"
+function PrintStream format( Locale Locale_1, string string_2, any any_3[])  alias for "format,(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;"
+subroutine  print( char char_1)  alias for "print,(C)V"
+subroutine  print( double double_1)  alias for "print,(D)V"
+subroutine  print( real real_1)  alias for "print,(F)V"
+subroutine  print( long long_1)  alias for "print,(I)V"
+subroutine  print( longlong longlong_1)  alias for "print,(J)V"
+subroutine  print( any any_1)  alias for "print,(Ljava/lang/Object;)V"
+subroutine  print( string string_1)  alias for "print,(Ljava/lang/String;)V"
+subroutine  print( boolean boolean_1)  alias for "print,(Z)V"
+subroutine  print( char char_1[])  alias for "print,([C)V"
+function PrintStream printf( string string_1, any any_2[])  alias for "printf,(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;"
+function PrintStream printf( Locale Locale_1, string string_2, any any_3[])  alias for "printf,(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/PrintStream;"
+subroutine  println()  alias for "println,()V"
+subroutine  println( char char_1)  alias for "println,(C)V"
+subroutine  println( double double_1)  alias for "println,(D)V"
+subroutine  println( real real_1)  alias for "println,(F)V"
+subroutine  println( long long_1)  alias for "println,(I)V"
+subroutine  println( longlong longlong_1)  alias for "println,(J)V"
+subroutine  println( any any_1)  alias for "println,(Ljava/lang/Object;)V"
+subroutine  println( string string_1)  alias for "println,(Ljava/lang/String;)V"
+subroutine  println( boolean boolean_1)  alias for "println,(Z)V"
+subroutine  println( char char_1[])  alias for "println,([C)V"
+subroutine  write( long long_1)  alias for "write,(I)V"
+subroutine  write( int int_1[], long long_2, long long_3)  alias for "write,([BII)V"
+end prototypes

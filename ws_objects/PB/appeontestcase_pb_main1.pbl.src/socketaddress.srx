@@ -1,0 +1,14 @@
+﻿$PBExportHeader$socketaddress.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type SocketAddress from nonvisualobject
+end type
+
+type variables
+ protected:
+string SocketAddress_javaname= "java.net.SocketAddress" 
+end variables
+
+forward prototypes
+ public:
+subroutine  SocketAddress()  alias for "<init>,()V"
+end prototypes

@@ -1,0 +1,11 @@
+﻿$PBExportHeader$p_pipeline_test.srp
+PIPELINE(source_connect=sql2005,destination_connect=SAPASE,type=create,commit=100,errors=100,keyname="appeon_test_x")
+SOURCE(name="appeon_test",COLUMN(type=long,name="id",dbtype="int",key=yes,nulls_allowed=no)
+ COLUMN(type=varchar,name="testname",dbtype="varchar(40)",nulls_allowed=no)
+ COLUMN(type=datetime,name="testdate",dbtype="smalldatetime",nulls_allowed=yes)
+ COLUMN(type=decimal,name="testnumber",dbtype="decimal(12,3)",nulls_allowed=yes))
+RETRIEVE(statement="PBSELECT( VERSION(400) TABLE(NAME=~"appeon_test~" ) COLUMN(NAME=~"appeon_test.id~") COLUMN(NAME=~"appeon_test.testname~") COLUMN(NAME=~"appeon_test.testdate~") COLUMN(NAME=~"appeon_test.testnumber~")) ")
+DESTINATION(name="appeon_test",COLUMN(type=long,name="id",dbtype="int",key=yes,nulls_allowed=no,initial_value="0")
+ COLUMN(type=varchar,name="testname",dbtype="varchar(40)",nulls_allowed=no,initial_value="spaces")
+ COLUMN(type=datetime,name="testdate",dbtype="smalldatetime",nulls_allowed=yes)
+ COLUMN(type=decimal,name="testnumber",dbtype="decimal(12,3)",nulls_allowed=yes))

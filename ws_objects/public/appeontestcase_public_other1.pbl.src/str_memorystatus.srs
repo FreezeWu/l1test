@@ -1,0 +1,14 @@
+﻿$PBExportHeader$str_memorystatus.srs
+$PBExportComments$Structure
+global type str_memorystatus from structure
+	unsignedlong		ul_length
+	unsignedlong		ul_memoryload
+	longlong		ll_totalphys
+	longlong		ll_availphys
+	longlong		ll_totalpagefile
+	longlong		ll_availpagefile
+	longlong		ll_totalvirtual
+	longlong		ll_availvirtual
+	longlong		ll_availextendedvirtual
+end type
+

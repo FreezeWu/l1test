@@ -1,0 +1,213 @@
+﻿$PBExportHeader$m_popup.srm
+forward
+global type m_popup from menu
+end type
+type m_add from menu within m_popup
+end type
+type m_delete from menu within m_popup
+end type
+global type m_popup from menu
+m_add m_add
+m_delete m_delete
+end type
+end forward
+
+global type m_popup from menu
+m_add m_add
+m_delete m_delete
+end type
+global m_popup m_popup
+
+type variables
+long il_handle
+datawindow idw
+treeview  itv_1
+end variables
+
+forward prototypes
+public subroutine of_setparm (long al_handle, treeview atv_tree, datawindow ad_dw)
+end prototypes
+
+public subroutine of_setparm (long al_handle, treeview atv_tree, datawindow ad_dw);//
+il_handle = al_handle
+idw = ad_dw
+itv_1 = atv_tree
+if gi_rightmode = 1 then
+	m_delete.enabled = true
+	m_add.enabled = true
+elseif gi_rightmode = 2 then
+	m_add.enabled = true
+end if
+end subroutine
+
+on m_popup.create
+m_popup=this
+call super::create
+this.text = "m_popup"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_add=create m_add
+this.m_delete=create m_delete
+this.Item[UpperBound(this.Item)+1]=this.m_add
+this.Item[UpperBound(this.Item)+1]=this.m_delete
+end on
+
+on m_popup.destroy
+call super::destroy
+destroy(this.m_add)
+destroy(this.m_delete)
+end on
+
+type m_add from menu within m_popup
+end type
+
+on m_add.create
+call super::create
+this.text = "Add"
+this.enabled = false
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_add.destroy
+call super::destroy
+end on
+
+event clicked;long ll_handle,ll_caseid
+
+treeviewitem ltrv_1,ltrv_2
+select max(cast(testcaseid as integer)) into :ll_caseid from t_testcase;
+if isnull(ll_caseid) then ll_caseid = 0
+ll_caseid = ll_caseid + 1
+if isvalid(w_manager) then
+	w_manager.cb_1.enabled = false
+end if
+if il_handle = 0 then
+	//插入一级节点
+	idw.reset( )
+	idw.dataobject = "d_testcase_insert_parent"
+	idw.settransobject( sqlca)
+	idw.insertrow(0)
+	idw.setitem(1,"updateuser",gi_userid)
+	idw.setitem(1,"updatetime",today())
+	idw.setitem(1,"testcaseid",string(ll_caseid))
+	idw.setitem(1,"parentid","0")
+	idw.setitem(1,"runmode","11100")
+	idw.setitem(1,"l1flag",1)
+else
+	//插入二级节点
+	itv_1.getitem(il_handle,ltrv_1)
+	idw.reset( )
+	idw.dataobject = "d_testcase_insert"
+	idw.settransobject( sqlca)
+	idw.insertrow(0)
+	if ltrv_1.level = 2 then
+		ll_handle = itv_1.finditem( parenttreeitem!, il_handle)
+		itv_1.getitem(ll_handle,ltrv_2)
+		idw.setitem(1,"updateuser",gi_userid)
+		idw.setitem(1,"updatetime",today())
+		idw.setitem(1,"testcaseid",string(ll_caseid))
+		idw.setitem(1,"parentid",string(ltrv_2.data))
+		idw.setitem(1,"l1flag",1)
+	else
+		idw.insertrow(0)
+		idw.setitem(1,"updateuser",gi_userid)
+		idw.setitem(1,"updatetime",today())
+		idw.setitem(1,"testcaseid",string(ll_caseid))
+		idw.setitem(1,"parentid",string(ltrv_1.data))
+		idw.setitem(1,"l1flag",1)
+	end if
+end if
+end event
+
+type m_delete from menu within m_popup
+end type
+
+on m_delete.create
+call super::create
+this.text = "Delete"
+this.enabled = false
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_delete.destroy
+call super::destroy
+end on
+
+event clicked;treeviewitem 		ltrv_1
+string 				ls_testcaseid
+long					ll_row
+
+if il_handle = 0 then return
+
+itv_1.getitem(il_handle,ltrv_1)
+ls_testcaseid = string(ltrv_1.data)
+if isnull(ls_testcaseid) or ls_testcaseid = "" or idw.rowcount() <> 1 then return 
+	
+if ltrv_1.level =  1 then
+	messagebox("warning","功能模块不允许删除，可以修改模块名称")
+	return
+end if
+
+if messagebox("Question","Are you sure to delete "+string(ltrv_1.label)+" ? ",question!,yesno!,2) = 1 then
+//	ll_row = idw.find("testcasename='"+ls_testcaseid+"'", 1, idw.rowcount() )
+//	if not isnull(ll_row) and ll_row > 0 then 
+//		idw.deleterow(ll_row)
+//	else
+//		return 
+//	end if 
+	idw.deleterow(0)
+else
+	return 
+end if
+
+if idw.update( ) = 1 then
+	commit;
+	itv_1.deleteitem( il_handle )
+	messagebox("Success","Delete "+string(ltrv_1.label)+" Success")
+else
+	messagebox("Error","Delete "+string(ltrv_1.label)+" Failed: "+sqlca.sqlerrtext)
+	rollback;
+end if
+end event
+

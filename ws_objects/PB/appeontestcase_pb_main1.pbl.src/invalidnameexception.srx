@@ -1,0 +1,15 @@
+﻿$PBExportHeader$invalidnameexception.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type InvalidNameException from NamingException
+end type
+
+type variables
+ protected:
+string InvalidNameException_javaname= "javax.naming.InvalidNameException" 
+end variables
+
+forward prototypes
+ public:
+subroutine  InvalidNameException()  alias for "<init>,()V"
+subroutine  InvalidNameException( string string_1)  alias for "<init>,(Ljava/lang/String;)V"
+end prototypes

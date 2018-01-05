@@ -1,0 +1,8 @@
+﻿$PBExportHeader$str_woc401_winstuct.srs
+global type str_woc401_winstuct from structure
+	string		ls_winclassname
+	boolean		lb_havebtn
+	string		ls_caption
+	long		ll_wintype
+end type
+

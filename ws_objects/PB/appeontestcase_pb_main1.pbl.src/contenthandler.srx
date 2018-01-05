@@ -1,0 +1,16 @@
+﻿$PBExportHeader$contenthandler.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type ContentHandler from nonvisualobject
+end type
+
+type variables
+ protected:
+string ContentHandler_javaname= "java.net.ContentHandler" 
+end variables
+
+forward prototypes
+ public:
+subroutine  ContentHandler()  alias for "<init>,()V"
+function any getContent( URLConnection URLConnection_1) throws IOException alias for "getContent,(Ljava/net/URLConnection;)Ljava/lang/Object;"
+function any getContent( URLConnection URLConnection_1, any any_2[]) throws IOException alias for "getContent,(Ljava/net/URLConnection;[Ljava/lang/Class;)Ljava/lang/Object;"
+end prototypes

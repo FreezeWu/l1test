@@ -1,0 +1,17 @@
+﻿$PBExportHeader$ejbhome.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type EJBHome from Remote
+end type
+
+type variables
+ protected:
+string EJBHome_javaname= "javax.ejb.EJBHome" 
+end variables
+
+forward prototypes
+ public:
+function EJBMetaData getEJBMetaData() throws RemoteException alias for "getEJBMetaData,()Ljavax/ejb/EJBMetaData;"
+function HomeHandle getHomeHandle() throws RemoteException alias for "getHomeHandle,()Ljavax/ejb/HomeHandle;"
+subroutine  remove( any any_1) throws RemoteException, RemoveException alias for "remove,(Ljava/lang/Object;)V"
+subroutine  remove( Handle Handle_1) throws RemoteException, RemoveException alias for "remove,(Ljavax/ejb/Handle;)V"
+end prototypes

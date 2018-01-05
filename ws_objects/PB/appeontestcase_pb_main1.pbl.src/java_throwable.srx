@@ -1,0 +1,29 @@
+﻿$PBExportHeader$java_throwable.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type java_Throwable from nonvisualobject
+end type
+
+type variables
+ protected:
+string java_Throwable_javaname= "java.lang.Throwable" 
+StackTraceElement i__java_Throwable__StackTraceElement
+end variables
+
+forward prototypes
+ public:
+function java_Throwable fillInStackTrace()  alias for "fillInStackTrace,()Ljava/lang/Throwable;"
+function java_Throwable getCause()  alias for "getCause,()Ljava/lang/Throwable;"
+function string getLocalizedMessage()  alias for "getLocalizedMessage,()Ljava/lang/String;"
+function string getMessage()  alias for "getMessage,()Ljava/lang/String;"
+function any getStackTrace()  alias for "getStackTrace,()[Ljava/lang/StackTraceElement;|StackTraceElement"
+function java_Throwable initCause( java_Throwable java_Throwable_1)  alias for "initCause,(Ljava/lang/Throwable;)Ljava/lang/Throwable;"
+subroutine  java_Throwable()  alias for "<init>,()V"
+subroutine  java_Throwable( string string_1)  alias for "<init>,(Ljava/lang/String;)V"
+subroutine  java_Throwable( string string_1, java_Throwable java_Throwable_2)  alias for "<init>,(Ljava/lang/String;Ljava/lang/Throwable;)V"
+subroutine  java_Throwable( java_Throwable java_Throwable_1)  alias for "<init>,(Ljava/lang/Throwable;)V"
+subroutine  printStackTrace()  alias for "printStackTrace,()V"
+subroutine  printStackTrace( PrintStream PrintStream_1)  alias for "printStackTrace,(Ljava/io/PrintStream;)V"
+subroutine  printStackTrace( PrintWriter PrintWriter_1)  alias for "printStackTrace,(Ljava/io/PrintWriter;)V"
+subroutine  setStackTrace( StackTraceElement StackTraceElement_1[])  alias for "setStackTrace,([Ljava/lang/StackTraceElement;)V"
+function string toString()  alias for "toString,()Ljava/lang/String;"
+end prototypes

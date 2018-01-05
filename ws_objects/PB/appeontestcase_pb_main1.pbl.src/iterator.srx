@@ -1,0 +1,16 @@
+﻿$PBExportHeader$iterator.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Iterator from nonvisualobject
+end type
+
+type variables
+ protected:
+string Iterator_javaname= "java.util.Iterator" 
+end variables
+
+forward prototypes
+ public:
+function boolean hasNext()  alias for "hasNext,()Z"
+function any next_j()  alias for "next,()Ljava/lang/Object;"
+subroutine  remove()  alias for "remove,()V"
+end prototypes

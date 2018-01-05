@@ -1,0 +1,15 @@
+﻿$PBExportHeader$f_uso103_call.srf
+global type f_uso103_call from function_object
+end type
+
+forward prototypes
+global subroutine f_uso103_call ()
+end prototypes
+
+global subroutine f_uso103_call ();//Call AutoCustomClass In Global Function
+//TestPoint: USO103W01P003
+n_cst_uso103_autouo	luo_autouo
+
+gs_str = luo_autouo.is_str
+end subroutine
+

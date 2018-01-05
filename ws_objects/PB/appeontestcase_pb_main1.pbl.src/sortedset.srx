@@ -1,0 +1,19 @@
+﻿$PBExportHeader$sortedset.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type SortedSet from Set
+end type
+
+type variables
+ protected:
+string SortedSet_javaname= "java.util.SortedSet" 
+end variables
+
+forward prototypes
+ public:
+function Comparator comparator()  alias for "comparator,()Ljava/util/Comparator;"
+function any first_j()  alias for "first,()Ljava/lang/Object;"
+function SortedSet headSet( any any_1)  alias for "headSet,(Ljava/lang/Object;)Ljava/util/SortedSet;"
+function any last_j()  alias for "last,()Ljava/lang/Object;"
+function SortedSet subSet( any any_1, any any_2)  alias for "subSet,(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;"
+function SortedSet tailSet( any any_1)  alias for "tailSet,(Ljava/lang/Object;)Ljava/util/SortedSet;"
+end prototypes

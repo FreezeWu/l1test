@@ -1,0 +1,15 @@
+﻿$PBExportHeader$enumeration.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Enumeration from nonvisualobject
+end type
+
+type variables
+ protected:
+string Enumeration_javaname= "java.util.Enumeration" 
+end variables
+
+forward prototypes
+ public:
+function boolean hasMoreElements()  alias for "hasMoreElements,()Z"
+function any nextElement()  alias for "nextElement,()Ljava/lang/Object;"
+end prototypes

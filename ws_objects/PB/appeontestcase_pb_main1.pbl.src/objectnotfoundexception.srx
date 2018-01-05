@@ -1,0 +1,15 @@
+﻿$PBExportHeader$objectnotfoundexception.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type ObjectNotFoundException from FinderException
+end type
+
+type variables
+ protected:
+string ObjectNotFoundException_javaname= "javax.ejb.ObjectNotFoundException" 
+end variables
+
+forward prototypes
+ public:
+subroutine  ObjectNotFoundException()  alias for "<init>,()V"
+subroutine  ObjectNotFoundException( string string_1)  alias for "<init>,(Ljava/lang/String;)V"
+end prototypes

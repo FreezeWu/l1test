@@ -1,0 +1,6 @@
+﻿$PBExportHeader$str_testcase_result.srs
+global type str_testcase_result from structure
+	string		s_exp
+	string		s_real
+end type
+

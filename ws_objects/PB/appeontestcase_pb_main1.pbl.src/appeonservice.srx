@@ -1,0 +1,33 @@
+﻿$PBExportHeader$appeonservice.srx
+$PBExportComments$Proxy imported from Web service using Web Service Proxy Generator.
+global type AppeonService from NonVisualObject
+end type
+
+type variables
+Protected:
+        string pbws_ver = ".NET"
+        string cs_namespace = "WebService"
+        string cs_class = "AppeonService"
+        string cs_assembly = "AppeonService.dll"
+        string pb_prefix = ""
+        string pb_usenvo = "YES"
+        string pb_target = "D:\program\BugAnalize\Auto Test For PB\L1testcase_new"
+        string AuthSoapHeader = "AuthSoapHeader(System.String PassWord,System.String UserName,System.Xml.XmlAttribute[] AnyAttr,System.String EncodedMustUnderstand,System.String EncodedMustUnderstand12,System.Boolean MustUnderstand,System.String Actor,System.String Role,System.Boolean DidUnderstand,System.String EncodedRelay,System.Boolean Relay)"
+end variables
+
+forward prototypes
+public:
+function string getAllSessions(  string servername,  string appname) alias for "<method name='getAllSessions' ns='WebService' pbname='getAllSessions' headerdir='IN' headername='AuthSoapHeaderValue' headertype='WebService.AuthSoapHeader'><return name='returnvalue' type='System.String' isRef='False' ArrayDim='0' IsNullableType='False' /><param name='servername' type='System.String' pos='0' dir='in' ArrayDim='0' IsNullableType='False'/><param name='appname' type='System.String' pos='1' dir='in' ArrayDim='0' IsNullableType='False'/></method>"
+function string getSessionByID(  string sessionID) alias for "<method name='getSessionByID' ns='WebService' pbname='getSessionByID' headerdir='IN' headername='AuthSoapHeaderValue' headertype='WebService.AuthSoapHeader'><return name='returnvalue' type='System.String' isRef='False' ArrayDim='0' IsNullableType='False' /><param name='sessionID' type='System.String' pos='0' dir='in' ArrayDim='0' IsNullableType='False'/></method>"
+function long getSessionCount(  string servername,  string appname) alias for "<method name='getSessionCount' ns='WebService' pbname='getSessionCount' headerdir='IN' headername='AuthSoapHeaderValue' headertype='WebService.AuthSoapHeader'><return name='returnvalue' type='System.Int32' isRef='False' ArrayDim='0' IsNullableType='False' /><param name='servername' type='System.String' pos='0' dir='in' ArrayDim='0' IsNullableType='False'/><param name='appname' type='System.String' pos='1' dir='in' ArrayDim='0' IsNullableType='False'/></method>"
+function string getAllClients(  string servername,  string appname) alias for "<method name='getAllClients' ns='WebService' pbname='getAllClients' headerdir='IN' headername='AuthSoapHeaderValue' headertype='WebService.AuthSoapHeader'><return name='returnvalue' type='System.String' isRef='False' ArrayDim='0' IsNullableType='False' /><param name='servername' type='System.String' pos='0' dir='in' ArrayDim='0' IsNullableType='False'/><param name='appname' type='System.String' pos='1' dir='in' ArrayDim='0' IsNullableType='False'/></method>"
+function string getServerVersion() alias for "<method name='getServerVersion' ns='WebService' pbname='getServerVersion' headerdir='IN' headername='AuthSoapHeaderValue' headertype='WebService.AuthSoapHeader'><return name='returnvalue' type='System.String' isRef='False' ArrayDim='0' IsNullableType='False' /></method>"
+function string killAllSessions(  string servername) alias for "<method name='killAllSessions' ns='WebService' pbname='killAllSessions' headerdir='IN' headername='AuthSoapHeaderValue' headertype='WebService.AuthSoapHeader'><return name='returnvalue' type='System.String' isRef='False' ArrayDim='0' IsNullableType='False' /><param name='servername' type='System.String' pos='0' dir='in' ArrayDim='0' IsNullableType='False'/></method>"
+function string killSessions(  string sessionString) alias for "<method name='killSessions' ns='WebService' pbname='killSessions' headerdir='IN' headername='AuthSoapHeaderValue' headertype='WebService.AuthSoapHeader'><return name='returnvalue' type='System.String' isRef='False' ArrayDim='0' IsNullableType='False' /><param name='sessionString' type='System.String' pos='0' dir='in' ArrayDim='0' IsNullableType='False'/></method>"
+subroutine CancelAsync (  any userState) alias for "<method name='CancelAsync' ns='WebService' pbname='CancelAsync'><param name='userState' type='System.Object' pos='0' dir='in' ArrayDim='0' IsNullableType='False'/></method>"
+subroutine PBAddCookie(any cookie) alias for "<method name='PBAddCookie' ns='System.Runtime.Remoting.Messaging'  IsCookieFunction='True' pbname='PBAddCookie'><return name='returnvalue' type='System.Void' isRef='false' ArrayDim='0' IsNullableType='false' /><param name='cookie' type='any' pos='0' dir='in' ArrayDim='0' IsNullableType='False'/></method>"
+function any PBGetCookies(string Uri) alias for "<method name='PBGetCookies' ns='System.Runtime.Remoting.Messaging'  IsCookieFunction='True' pbname='PBGetCookies'><return name='returnvalue' type='System.Object' isRef='false' ArrayDim='0' IsNullableType='false' /><param name='cookie' type='System.String' pos='0' dir='in' ArrayDim='0' IsNullableType='False'/></method>"
+function boolean setAuthSoapHeaderValue(AuthSoapHeader AuthSoapHeaderValue) alias for "<method name='setAuthSoapHeaderValue' ns='WebService' pbname='setAuthSoapHeaderValue' isproperty='TRUE'><return name='returnvalue' type='System.Boolean' isRef='False' ArrayDim='0' /><param name='AuthSoapHeaderValue' type='WebService.AuthSoapHeader' pos='0' dir='in' ArrayDim='0'/></method>"
+function AuthSoapHeader getAuthSoapHeaderValue() alias for "<method name='getAuthSoapHeaderValue' ns='WebService' pbname='getAuthSoapHeaderValue' isproperty='TRUE'><return name='returnvalue' type='WebService.AuthSoapHeader' isRef='False' ArrayDim='0' /></method>"
+end prototypes
+

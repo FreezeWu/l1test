@@ -1,0 +1,7 @@
+﻿$PBExportHeader$stru_dept.srs
+global type stru_dept from structure
+	long		l_dept[]
+	string		s_tile
+	datastore		d_ds
+end type
+

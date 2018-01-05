@@ -1,0 +1,11 @@
+﻿$PBExportHeader$appeongetcachedir.srf
+global type appeongetcachedir from function_object
+end type
+
+forward prototypes
+global function string appeongetcachedir ()
+end prototypes
+
+global function string appeongetcachedir ();return ""
+end function
+

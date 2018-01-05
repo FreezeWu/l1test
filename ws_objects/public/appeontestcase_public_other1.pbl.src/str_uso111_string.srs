@@ -1,0 +1,5 @@
+﻿$PBExportHeader$str_uso111_string.srs
+global type str_uso111_string from structure
+	string		ss_str
+end type
+

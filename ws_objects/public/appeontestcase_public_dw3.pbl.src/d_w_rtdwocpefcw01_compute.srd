@@ -1,0 +1,72 @@
+﻿$PBExportHeader$d_w_rtdwocpefcw01_compute.srd
+release 12.6;
+datawindow(units=2 timer_interval=0 color=1073741824 processing=7 print.printername ="" print.documentname="" print.orientation = 0 print.margin.left = 250 print.margin.right = 250 print.margin.top = 250 print.margin.bottom = 250 print.paper.source = 0 print.paper.size = 0 print.canusedefaultprinter=yes print.prompt=no print.cliptext=no print.overrideprintjob=no print.collate=yes print.background=no print.preview.background=no print.preview.outline=yes richtext.headerfooter=yes richtext.wordwrap=no richtext.popmenu=yes richtext.pictureframe=no richtext.inputfieldnamesvisible=no richtext.inputfieldsvisible=no richtext.tabsvisible=no richtext.returnsvisible=no richtext.spacesvisible=no richtext.inputfieldbackcolor=1073741824 richtext.backcolor=1073741824 richtext.tabbar=no richtext.rulerbar=no richtext.toolbar=no richtext.displayonly=no )
+detail(text="{\rtf1\ansi\ansicpg936\uc1\deff0{\fonttbl
+{\f0\fnil\fcharset134\fprq2 \'cb\'ce\'cc\'e5;}
+{\f1\froman\fcharset0\fprq2 Times New Roman;}
+{\f2\froman\fcharset2\fprq2 Symbol;}}
+{\colortbl;\red0\green0\blue0;\red255\green255\blue255;\red0\green0\blue0;}
+{\stylesheet{\s0\itap0\nowidctlpar\f0\fs24 [Normal];}{\*\cs10\additive Default Paragraph Font;}}
+{\*\generator TX_RTF32 15.0.530.503;}
+\deftab1134\paperw12240\paperh15840\margl0\margt0\margr0\margb0\widowctrl\formshade\sectd
+\headery720\footery720\pgwsxn12240\pghsxn15840\marglsxn0\margtsxn0\margrsxn0\margbsxn0\pard\itap0\nowidctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\plain\f1\fs20\cf3\tab Expression: 'Page ' + page() + ' of ' + pageCount()\tab\plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{DWPAGE\}}}{\fldrslt{\{DWPAGE\}}}}\plain\f1\fs20\cf3          Expression: Dwdate           \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{DWDATE\}}}{\fldrslt{\{DWDATE\}}}}\plain\f1\fs24\par\plain\f1\fs20\cf3\tab Expression_1:  emp_id \tab\plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{EXPRESSION_1\}}}{\fldrslt{\{EXPRESSION_1\}}}}\plain\f1\fs20\cf3         Expression_2: emp_name  \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{EXPRESSION_2\}}}{\fldrslt{\{EXPRESSION_2\}}}}\plain\f1\fs24\par\plain\f1\fs20\cf3  \tab Expression_3:case(  emp_id  when 1 then   dep_id when 2 then   emp_age else  emp_salary )\tab\plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{EXPRESSION_3\}}}{\fldrslt{\{EXPRESSION_3\}}}}\plain\f1\fs20\cf3          \plain\f1\fs24\par\plain\f1\fs20\cf3                 Expression_4:if( emp_sex = 'M','Men','Women')                \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{EXPRESSION_4\}}}{\fldrslt{\{EXPRESSION_4\}}}}\plain\f1\fs24\par\plain\f1\fs20\cf3                 Expression_10:       emp_code;visible = 0        \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{EXPRESSION_10\}}}{\fldrslt{\{EXPRESSION_10\}}}}\plain\f1\fs24\par\plain\f1\fs20\cf3\tab Expression_11:         emp_name + '~~r' + 'appeon'             \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{EXPRESSION_11\}}}{\fldrslt{\{EXPRESSION_11\}}}}\plain\f1\fs24\par\plain\f1\fs20\cf3                 Expression_12:          emp_name + '~~r'+ 'sybase'              \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{EXPRESSION_12\}}}{\fldrslt{\{EXPRESSION_12\}}}}\plain\f1\fs24\par\plain\f1\fs20\cf3 Emp Name: \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{EMP_NAME\}}}{\fldrslt{\{EMP_NAME\}}}}\plain\f1\fs24\par\plain\f1\fs20\cf3 Emp Sex: \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{EMP_SEX\}}}{\fldrslt{\{EMP_SEX\}}}}\plain\f1\fs24\par\plain\f1\fs20\cf3 Emp Born: \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{EMP_BORN\}}}{\fldrslt{\{EMP_BORN\}}}}\plain\f1\fs24\par\plain\f1\fs20\cf3 Emp Age: \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{EMP_AGE\}}}{\fldrslt{\{EMP_AGE\}}}}\plain\f1\fs24\par\plain\f1\fs20\cf3 Emp Salary: \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{EMP_SALARY\}}}{\fldrslt{\{EMP_SALARY\}}}}\plain\f1\fs24\par\plain\f1\fs20\cf3 Emp Remark: \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{EMP_REMARK\}}}{\fldrslt{\{EMP_REMARK\}}}}\plain\f1\fs24\par\pard\itap0\nowidctlpar}")
+header(text="{\rtf1\ansi\ansicpg936\uc1\deff0{\fonttbl
+{\f0\fnil\fcharset134\fprq2 \'cb\'ce\'cc\'e5;}
+{\f1\froman\fcharset0\fprq2 Times New Roman;}
+{\f2\froman\fcharset2\fprq2 Symbol;}}
+{\colortbl;\red0\green0\blue0;\red255\green255\blue255;\red0\green0\blue0;}
+{\stylesheet{\s0\itap0\nowidctlpar\f0\fs24 [Normal];}{\*\cs10\additive Default Paragraph Font;}}
+{\*\generator TX_RTF32 15.0.530.503;}
+\deftab1134\paperw12240\paperh15840\margl0\margt0\margr0\margb0\widowctrl\formshade\sectd
+\headery720\footery720\pgwsxn12240\pghsxn15840\marglsxn0\margtsxn0\margrsxn0\margbsxn0\pard\itap0\nowidctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\plain\f1\fs20\cf3\tab Expression:'Page ' + page() + ' of ' + pageCount()           \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{DWPAGE1\}}}{\fldrslt{\{DWPAGE1\}}}}\plain\f1\fs20\cf3   \plain\f1\fs24\par\plain\f1\fs20\cf3                  Expression: today()  \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{DWDATE1\}}}{\fldrslt{\{DWDATE1\}}}}\plain\f1\fs20\cf3            \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{DWDATE2\}}}{\fldrslt{\{DWDATE2\}}}}\plain\f1\fs20\cf3                 \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{DWDATE3\}}}{\fldrslt{\{DWDATE3\}}}}\plain\f1\fs24\par\plain\f1\fs20\cf3                  Expression_5: emp_born    \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{EXPRESSION_5\}}}{\fldrslt{\{EXPRESSION_5\}}}}\plain\f1\fs20\cf3\tab\plain\f1\fs24\par\plain\f1\fs20\cf3                   Expression_6:isSelected( )   \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{EXPRESSION_6\}}}{\fldrslt{\{EXPRESSION_6\}}}}\plain\f1\fs24\par\plain\f1\fs20\cf3\tab   Expression _7: currentRow()      \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{EXPRESSION_7\}}}{\fldrslt{\{EXPRESSION_7\}}}}\plain\f1\fs24\par\pard\itap0\nowidctlpar}")
+footer(text="{\rtf1\ansi\ansicpg936\uc1\deff0{\fonttbl
+{\f0\fnil\fcharset134\fprq2 \'cb\'ce\'cc\'e5;}
+{\f1\froman\fcharset0\fprq2 Times New Roman;}
+{\f2\froman\fcharset2\fprq2 Symbol;}}
+{\colortbl;\red0\green0\blue0;\red255\green255\blue255;\red0\green0\blue0;}
+{\stylesheet{\s0\itap0\nowidctlpar\f0\fs24 [Normal];}{\*\cs10\additive Default Paragraph Font;}}
+{\*\generator TX_RTF32 15.0.530.503;}
+\deftab1134\paperw12240\paperh15840\margl0\margt0\margr0\margb0\widowctrl\formshade\sectd
+\headery720\footery720\pgwsxn12240\pghsxn15840\marglsxn0\margtsxn0\margrsxn0\margbsxn0\pard\itap0\nowidctlpar\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\tx9360\tx10080\plain\f1\fs20\cf3\tab Expression:'Page ' + page() + ' of ' + pageCount()    \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{DWPAGE2\}}}{\fldrslt{\{DWPAGE2\}}}}\plain\f1\fs24\par\plain\f1\fs20\cf3\tab Expression: today()   \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{DWDATE4\}}}{\fldrslt{\{DWDATE4\}}}}\plain\f1\fs20\cf3\tab          \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{DWPAGE3\}}}{\fldrslt{\{DWPAGE3\}}}}\plain\f1\fs24\par\plain\f1\fs20\cf3\tab Expression_8:      rowheight()             \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{EXPRESSION_8\}}}{\fldrslt{\{EXPRESSION_8\}}}}\plain\f1\fs24\par\plain\f1\fs20\cf3                 Expression_9:   isRowNew()                \plain\f1\fs20\cf3{\field\fldlock{\*\fldinst {\{EXPRESSION_9\}}}{\fldrslt{\{EXPRESSION_9\}}}}\plain\f1\fs24\par\pard\itap0\nowidctlpar}")table(column=(type=long update=yes updatewhereclause=yes key=yes name=emp_id dbname="PUB_T_RICHTEXTEDIT.emp_id" )
+ column=(type=long update=yes updatewhereclause=yes name=dep_id dbname="PUB_T_RICHTEXTEDIT.dep_id" )
+ column=(type=char(3) update=yes updatewhereclause=yes name=emp_code dbname="PUB_T_RICHTEXTEDIT.emp_code" )
+ column=(type=char(20) update=yes updatewhereclause=yes name=emp_name dbname="PUB_T_RICHTEXTEDIT.emp_name" )
+ column=(type=char(2) update=yes updatewhereclause=yes name=emp_sex dbname="PUB_T_RICHTEXTEDIT.emp_sex" )
+ column=(type=datetime update=yes updatewhereclause=yes name=emp_born dbname="PUB_T_RICHTEXTEDIT.emp_born" )
+ column=(type=long update=yes updatewhereclause=yes name=emp_age dbname="PUB_T_RICHTEXTEDIT.emp_age" )
+ column=(type=decimal(2) update=yes updatewhereclause=yes name=emp_salary dbname="PUB_T_RICHTEXTEDIT.emp_salary" )
+ column=(type=char(4099) update=yes updatewhereclause=no name=emp_remark dbname="PUB_T_RICHTEXTEDIT.emp_remark" )
+ retrieve="PBSELECT( VERSION(400) TABLE(NAME=~"PUB_T_RICHTEXTEDIT~" ) COLUMN(NAME=~"PUB_T_RICHTEXTEDIT.emp_id~") COLUMN(NAME=~"PUB_T_RICHTEXTEDIT.dep_id~") COLUMN(NAME=~"PUB_T_RICHTEXTEDIT.emp_code~") COLUMN(NAME=~"PUB_T_RICHTEXTEDIT.emp_name~") COLUMN(NAME=~"PUB_T_RICHTEXTEDIT.emp_sex~") COLUMN(NAME=~"PUB_T_RICHTEXTEDIT.emp_born~") COLUMN(NAME=~"PUB_T_RICHTEXTEDIT.emp_age~") COLUMN(NAME=~"PUB_T_RICHTEXTEDIT.emp_salary~") COLUMN(NAME=~"PUB_T_RICHTEXTEDIT.emp_remark~")WHERE(    EXP1 =~"PUB_T_RICHTEXTEDIT.emp_id~"   OP =~"<~"    EXP2 =~"10~" ) ) " update="PUB_T_RICHTEXTEDIT" updatewhere=1 updatekeyinplace=no )
+compute(name=expression_11 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" format="[general]" expression=" emp_name +'~~r' +  'appeon' " )
+compute(name=expression_10 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" format="[general]" expression=" emp_code " )
+compute(name=dwpage3 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" format="[general]" expression="'Page ' + page() + ' of ' + pageCount()" )
+compute(name=dwdate4 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" format="yyyy-mm-dd" expression="today()" )
+compute(name=dwpage2 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" format="[general]" expression="'Page ' + page() + ' of ' + pageCount()" )
+compute(name=expression_7 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" format="[general]" expression="currentRow()" )
+compute(name=expression_6 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" format="[general]" expression="isSelected()" )
+compute(name=expression_5 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" format="yyyy-mm-dd" expression=" emp_born " )
+compute(name=dwdate3 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" format="yyyy-mm-dd" expression="today()" )
+compute(name=dwdate2 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" format="yyyy-mm-dd" expression="today()" )
+compute(name=dwdate1 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" format="yyyy-mm-dd" expression="today()" )
+compute(name=dwpage1 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" format="[general]" expression="'Page ' + page() + ' of ' + pageCount()" )
+compute(name=expression_4 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" format="[general]" expression="if( emp_sex = 'M','Men','Women')" )
+compute(name=expression_3 visible="1" lineremove=no multiline=no width.autosize=no width="0" alignment="1" format="[general]" expression="case(  emp_id  when 1 then   dep_id when 2 then   emp_age else  emp_salary )" )
+compute(name=expression_2 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" format="[general]" expression=" emp_name " )
+compute(name=expression_1 visible="1" lineremove=no multiline=no width.autosize=yes width="2000" alignment="0" format="[general]" expression=" emp_id " )
+compute(name=dwdate visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" format="yyyy-mm-dd" expression="today()" )
+compute(name=dwpage visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" format="[general]" expression="'Page ' + page() + ' of ' + pageCount()" )
+compute(name=expression_8 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" format="[general]" expression="rowheight()" )
+compute(name=expression_9 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" format="[general]" expression="isRowNew()" )
+compute(name=expression_12 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" format="[general]" expression=" emp_name  + '~~r' + 'sybase'" )
+column(name=emp_id id=1 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" tabsequence=1 format="[general]" )
+column(name=dep_id id=2 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" tabsequence=1 format="[general]" )
+column(name=emp_code id=3 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" tabsequence=1 format="[general]" )
+column(name=emp_name id=4 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" tabsequence=1 format="[general]" )
+column(name=emp_sex id=5 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" tabsequence=1 format="[general]" )
+column(name=emp_born id=6 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" tabsequence=1 format="yyyy-mm-dd hh:mm:ss" )
+column(name=emp_age id=7 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" tabsequence=1 format="[general]" )
+column(name=emp_salary id=8 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" tabsequence=1 format="[general]" )
+column(name=emp_remark id=9 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" tabsequence=1 format="[general]" )
+htmltable(border="1" cellpadding="0" cellspacing="0" generatecss="no" nowrap="yes")
+export.xml(headgroups="1" includewhitespace="0" metadatatype=0 savemetadata=0 )
+import.xml()

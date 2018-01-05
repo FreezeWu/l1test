@@ -1,0 +1,43 @@
+﻿$PBExportHeader$m_uso103_autouvo.srm
+forward
+global type m_uso103_autouvo from menu
+end type
+end forward
+
+global type m_uso103_autouvo from menu
+end type
+global m_uso103_autouvo m_uso103_autouvo
+
+forward prototypes
+public subroutine mf_call ()
+end prototypes
+
+public subroutine mf_call ();n_cst_uso103_autouo	luo_autouo
+gs_str = luo_autouo.is_str
+end subroutine
+
+on m_uso103_autouvo.create
+m_uso103_autouvo=this
+call super::create
+this.text = "m_uso103_autouvo"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_uso103_autouvo.destroy
+call super::destroy
+end on
+

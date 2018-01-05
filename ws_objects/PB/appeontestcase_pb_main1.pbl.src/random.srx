@@ -1,0 +1,24 @@
+﻿$PBExportHeader$random.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Random from nonvisualobject
+end type
+
+type variables
+ protected:
+string Random_javaname= "java.util.Random" 
+end variables
+
+forward prototypes
+ public:
+subroutine  Random()  alias for "<init>,()V"
+subroutine  Random( longlong longlong_1)  alias for "<init>,(J)V"
+function boolean nextBoolean()  alias for "nextBoolean,()Z"
+subroutine  nextBytes( int int_1[])  alias for "nextBytes,([B)V"
+function double nextDouble()  alias for "nextDouble,()D"
+function real nextFloat()  alias for "nextFloat,()F"
+function double nextGaussian()  alias for "nextGaussian,()D"
+function long nextInt()  alias for "nextInt,()I"
+function long nextInt( long long_1)  alias for "nextInt,(I)I"
+function longlong nextLong()  alias for "nextLong,()J"
+subroutine  setSeed( longlong longlong_1)  alias for "setSeed,(J)V"
+end prototypes

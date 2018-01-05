@@ -1,0 +1,15 @@
+﻿$PBExportHeader$finderexception.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type FinderException from exception
+end type
+
+type variables
+ protected:
+string FinderException_javaname= "javax.ejb.FinderException" 
+end variables
+
+forward prototypes
+ public:
+subroutine  FinderException()  alias for "<init>,()V"
+subroutine  FinderException( string string_1)  alias for "<init>,(Ljava/lang/String;)V"
+end prototypes

@@ -1,0 +1,17 @@
+﻿$PBExportHeader$ioexception.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type IOException from exception
+end type
+
+type variables
+ protected:
+string IOException_javaname= "java.io.IOException" 
+end variables
+
+forward prototypes
+ public:
+subroutine  IOException()  alias for "<init>,()V"
+subroutine  IOException( string string_1)  alias for "<init>,(Ljava/lang/String;)V"
+subroutine  IOException( string string_1, java_Throwable java_Throwable_2)  alias for "<init>,(Ljava/lang/String;Ljava/lang/Throwable;)V"
+subroutine  IOException( java_Throwable java_Throwable_1)  alias for "<init>,(Ljava/lang/Throwable;)V"
+end prototypes

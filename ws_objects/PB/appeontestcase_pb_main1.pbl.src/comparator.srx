@@ -1,0 +1,15 @@
+﻿$PBExportHeader$comparator.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Comparator from nonvisualobject
+end type
+
+type variables
+ protected:
+string Comparator_javaname= "java.util.Comparator" 
+end variables
+
+forward prototypes
+ public:
+function long compare( any any_1, any any_2)  alias for "compare,(Ljava/lang/Object;Ljava/lang/Object;)I"
+function boolean equals( any any_1)  alias for "equals,(Ljava/lang/Object;)Z"
+end prototypes

@@ -1,0 +1,10 @@
+﻿$PBExportHeader$serializable.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Serializable from nonvisualobject
+end type
+
+type variables
+ protected:
+string Serializable_javaname= "java.io.Serializable" 
+end variables
+

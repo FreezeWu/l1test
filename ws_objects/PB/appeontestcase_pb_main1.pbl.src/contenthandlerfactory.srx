@@ -1,0 +1,14 @@
+﻿$PBExportHeader$contenthandlerfactory.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type ContentHandlerFactory from nonvisualobject
+end type
+
+type variables
+ protected:
+string ContentHandlerFactory_javaname= "java.net.ContentHandlerFactory" 
+end variables
+
+forward prototypes
+ public:
+function ContentHandler createContentHandler( string string_1)  alias for "createContentHandler,(Ljava/lang/String;)Ljava/net/ContentHandler;"
+end prototypes

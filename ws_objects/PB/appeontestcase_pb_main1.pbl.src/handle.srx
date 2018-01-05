@@ -1,0 +1,14 @@
+﻿$PBExportHeader$handle.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Handle from Serializable
+end type
+
+type variables
+ protected:
+string Handle_javaname= "javax.ejb.Handle" 
+end variables
+
+forward prototypes
+ public:
+function EJBObject getEJBObject() throws RemoteException alias for "getEJBObject,()Ljavax/ejb/EJBObject;"
+end prototypes

@@ -1,0 +1,5 @@
+﻿$PBExportHeader$str_index_not_auto.srs
+global type str_index_not_auto from structure
+	n_index_not_auto		index
+end type
+

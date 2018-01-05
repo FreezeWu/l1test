@@ -1,0 +1,16 @@
+﻿$PBExportHeader$missingresourceexception.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type MissingResourceException from RuntimeException
+end type
+
+type variables
+ protected:
+string MissingResourceException_javaname= "java.util.MissingResourceException" 
+end variables
+
+forward prototypes
+ public:
+subroutine  MissingResourceException( string string_1, string string_2, string string_3)  alias for "<init>,(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"
+function string getClassName()  alias for "getClassName,()Ljava/lang/String;"
+function string getKey()  alias for "getKey,()Ljava/lang/String;"
+end prototypes

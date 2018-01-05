@@ -1,0 +1,10 @@
+﻿$PBExportHeader$u_dyn_struct170315.srs
+$PBExportComments$Dynamic Structure
+global type u_dyn_struct170315 from structure
+	window		win
+	string		clicked
+	string		label
+	integer		size
+	integer		code
+end type
+

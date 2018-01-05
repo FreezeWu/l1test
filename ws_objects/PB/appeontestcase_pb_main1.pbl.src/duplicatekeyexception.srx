@@ -1,0 +1,15 @@
+﻿$PBExportHeader$duplicatekeyexception.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type DuplicateKeyException from CreateException
+end type
+
+type variables
+ protected:
+string DuplicateKeyException_javaname= "javax.ejb.DuplicateKeyException" 
+end variables
+
+forward prototypes
+ public:
+subroutine  DuplicateKeyException()  alias for "<init>,()V"
+subroutine  DuplicateKeyException( string string_1)  alias for "<init>,(Ljava/lang/String;)V"
+end prototypes

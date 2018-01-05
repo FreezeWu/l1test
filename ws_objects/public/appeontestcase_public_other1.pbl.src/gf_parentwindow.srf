@@ -1,0 +1,27 @@
+﻿$PBExportHeader$gf_parentwindow.srf
+global type gf_parentwindow from function_object
+end type
+
+forward prototypes
+global function window gf_parentwindow (powerobject apo)
+end prototypes
+
+global function window gf_parentwindow (powerobject apo);window  lw_return
+powerobject  lpo
+
+if not isvalid(apo) then return lw_return
+lpo = apo
+do while true
+	lpo = lpo.getparent()
+	
+	if lpo.typeof() = window! then
+		lw_return = lpo
+		exit
+	else
+		continue
+	end if
+loop
+
+return lw_return
+end function
+

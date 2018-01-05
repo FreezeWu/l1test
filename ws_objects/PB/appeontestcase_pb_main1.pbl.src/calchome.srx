@@ -1,0 +1,14 @@
+﻿$PBExportHeader$calchome.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type CalcHome from EJBHome
+end type
+
+type variables
+ protected:
+string CalcHome_javaname= "mytest.CalcHome" 
+end variables
+
+forward prototypes
+ public:
+function Calc create() throws CreateException, RemoteException alias for "create,()Lmytest/Calc;"
+end prototypes

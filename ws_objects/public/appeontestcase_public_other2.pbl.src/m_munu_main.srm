@@ -1,0 +1,1689 @@
+﻿$PBExportHeader$m_munu_main.srm
+forward
+global type m_munu_main from menu
+end type
+type m_winmenu from menu within m_munu_main
+end type
+type m_baseuse from menu within m_winmenu
+end type
+type m_opensheet from menu within m_winmenu
+end type
+type m_openmain from menu within m_winmenu
+end type
+type m_openresponse from menu within m_winmenu
+end type
+type m_openpopup from menu within m_winmenu
+end type
+type m_winmenu from menu within m_munu_main
+m_baseuse m_baseuse
+m_opensheet m_opensheet
+m_openmain m_openmain
+m_openresponse m_openresponse
+m_openpopup m_openpopup
+end type
+type m_menuui from menu within m_munu_main
+end type
+type m_height from menu within m_menuui
+end type
+type m_width from menu within m_menuui
+end type
+type m_layer from menu within m_menuui
+end type
+type m_item from menu within m_menuui
+end type
+type m_text from menu within m_menuui
+end type
+type m_menuui from menu within m_munu_main
+m_height m_height
+m_width m_width
+m_layer m_layer
+m_item m_item
+m_text m_text
+end type
+type m_cascade from menu within m_munu_main
+end type
+type m_cascadeproperty from menu within m_cascade
+end type
+type m_property01 from menu within m_cascadeproperty
+end type
+type m_cascadeproperty from menu within m_cascade
+m_property01 m_property01
+end type
+type m_cascadeevent from menu within m_cascade
+end type
+type ascade from menu within m_cascade
+end type
+type m_cascadedynamiccreate from menu within m_cascade
+end type
+type m_cascadenestproperty from menu within m_cascade
+end type
+type m_nestmenucascadeevent from menu within m_cascade
+end type
+type m_inhertcascadeobject from menu within m_cascade
+end type
+type m_cascadeothers from menu within m_cascade
+end type
+type m_cascade from menu within m_munu_main
+m_cascadeproperty m_cascadeproperty
+m_cascadeevent m_cascadeevent
+ascade ascade
+m_cascadedynamiccreate m_cascadedynamiccreate
+m_cascadenestproperty m_cascadenestproperty
+m_nestmenucascadeevent m_nestmenucascadeevent
+m_inhertcascadeobject m_inhertcascadeobject
+m_cascadeothers m_cascadeothers
+end type
+type m_menuitem from menu within m_munu_main
+end type
+type m_item0 from menu within m_menuitem
+end type
+type m_sequence from menu within m_menuitem
+end type
+type m_menuitem from menu within m_munu_main
+m_item0 m_item0
+m_sequence m_sequence
+end type
+type m_calluimenu from menu within m_munu_main
+end type
+type m_call_openwindow from menu within m_calluimenu
+end type
+type m_call_opensheetwindow from menu within m_calluimenu
+end type
+type m_samemenu1 from menu within m_calluimenu
+end type
+type m_samemenu2 from menu within m_calluimenu
+end type
+type m_calluimenu from menu within m_munu_main
+m_call_openwindow m_call_openwindow
+m_call_opensheetwindow m_call_opensheetwindow
+m_samemenu1 m_samemenu1
+m_samemenu2 m_samemenu2
+end type
+type m_menuvardef from menu within m_munu_main
+end type
+type m_scope from menu within m_menuvardef
+end type
+type m_create from menu within m_menuvardef
+end type
+type m_evaluate from menu within m_menuvardef
+end type
+type m_menuvardef from menu within m_munu_main
+m_scope m_scope
+m_create m_create
+m_evaluate m_evaluate
+end type
+type m_toolbar from menu within m_munu_main
+end type
+type m_toolbartips from menu within m_toolbar
+end type
+type m_toolbarvisible from menu within m_toolbar
+end type
+type m_menutoolbar from menu within m_toolbar
+end type
+type m_toolbaritembarindex from menu within m_menutoolbar
+end type
+type m_toolbaritemname from menu within m_menutoolbar
+end type
+type m_toolbaritemorder from menu within m_menutoolbar
+end type
+type m_toolbaritem from menu within m_menutoolbar
+end type
+type m_menutoolbar from menu within m_toolbar
+m_toolbaritembarindex m_toolbaritembarindex
+m_toolbaritemname m_toolbaritemname
+m_toolbaritemorder m_toolbaritemorder
+m_toolbaritem m_toolbaritem
+end type
+type m_menuuitoolbar from menu within m_toolbar
+end type
+type m_mdiwithouttoolbar from menu within m_menuuitoolbar
+end type
+type m_toolbarwidth from menu within m_menuuitoolbar
+end type
+type m_picture from menu within m_menuuitoolbar
+end type
+type m_menuuitoolbar from menu within m_toolbar
+m_mdiwithouttoolbar m_mdiwithouttoolbar
+m_toolbarwidth m_toolbarwidth
+m_picture m_picture
+end type
+type m_toolbar from menu within m_munu_main
+m_toolbartips m_toolbartips
+m_toolbarvisible m_toolbarvisible
+m_menutoolbar m_menutoolbar
+m_menuuitoolbar m_menuuitoolbar
+end type
+type m_autorun from menu within m_munu_main
+end type
+type m_exit from menu within m_munu_main
+end type
+global type m_munu_main from menu
+m_winmenu m_winmenu
+m_menuui m_menuui
+m_cascade m_cascade
+m_menuitem m_menuitem
+m_calluimenu m_calluimenu
+m_menuvardef m_menuvardef
+m_toolbar m_toolbar
+m_autorun m_autorun
+m_exit m_exit
+end type
+end forward
+
+global type m_munu_main from menu
+m_winmenu m_winmenu
+m_menuui m_menuui
+m_cascade m_cascade
+m_menuitem m_menuitem
+m_calluimenu m_calluimenu
+m_menuvardef m_menuvardef
+m_toolbar m_toolbar
+m_autorun m_autorun
+m_exit m_exit
+end type
+global m_munu_main m_munu_main
+
+on m_munu_main.create
+m_munu_main=this
+call super::create
+this.text = "m_main"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_winmenu=create m_winmenu
+this.m_menuui=create m_menuui
+this.m_cascade=create m_cascade
+this.m_menuitem=create m_menuitem
+this.m_calluimenu=create m_calluimenu
+this.m_menuvardef=create m_menuvardef
+this.m_toolbar=create m_toolbar
+this.m_autorun=create m_autorun
+this.m_exit=create m_exit
+this.Item[UpperBound(this.Item)+1]=this.m_winmenu
+this.Item[UpperBound(this.Item)+1]=this.m_menuui
+this.Item[UpperBound(this.Item)+1]=this.m_cascade
+this.Item[UpperBound(this.Item)+1]=this.m_menuitem
+this.Item[UpperBound(this.Item)+1]=this.m_calluimenu
+this.Item[UpperBound(this.Item)+1]=this.m_menuvardef
+this.Item[UpperBound(this.Item)+1]=this.m_toolbar
+this.Item[UpperBound(this.Item)+1]=this.m_autorun
+this.Item[UpperBound(this.Item)+1]=this.m_exit
+end on
+
+on m_munu_main.destroy
+call super::destroy
+destroy(this.m_winmenu)
+destroy(this.m_menuui)
+destroy(this.m_cascade)
+destroy(this.m_menuitem)
+destroy(this.m_calluimenu)
+destroy(this.m_menuvardef)
+destroy(this.m_toolbar)
+destroy(this.m_autorun)
+destroy(this.m_exit)
+end on
+
+type m_winmenu from menu within m_munu_main
+m_baseuse m_baseuse
+m_opensheet m_opensheet
+m_openmain m_openmain
+m_openresponse m_openresponse
+m_openpopup m_openpopup
+end type
+
+on m_winmenu.create
+call super::create
+this.text = "WinMenu"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_baseuse=create m_baseuse
+this.m_opensheet=create m_opensheet
+this.m_openmain=create m_openmain
+this.m_openresponse=create m_openresponse
+this.m_openpopup=create m_openpopup
+this.Item[UpperBound(this.Item)+1]=this.m_baseuse
+this.Item[UpperBound(this.Item)+1]=this.m_opensheet
+this.Item[UpperBound(this.Item)+1]=this.m_openmain
+this.Item[UpperBound(this.Item)+1]=this.m_openresponse
+this.Item[UpperBound(this.Item)+1]=this.m_openpopup
+end on
+
+on m_winmenu.destroy
+call super::destroy
+destroy(this.m_baseuse)
+destroy(this.m_opensheet)
+destroy(this.m_openmain)
+destroy(this.m_openresponse)
+destroy(this.m_openpopup)
+end on
+
+type m_baseuse from menu within m_winmenu
+end type
+
+on m_baseuse.create
+call super::create
+this.text = "BaseUse"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_baseuse.destroy
+call super::destroy
+end on
+
+type m_opensheet from menu within m_winmenu
+end type
+
+on m_opensheet.create
+call super::create
+this.text = "OpenSheet"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_opensheet.destroy
+call super::destroy
+end on
+
+type m_openmain from menu within m_winmenu
+end type
+
+on m_openmain.create
+call super::create
+this.text = "Open Main"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_openmain.destroy
+call super::destroy
+end on
+
+type m_openresponse from menu within m_winmenu
+end type
+
+on m_openresponse.create
+call super::create
+this.text = "Open Response"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_openresponse.destroy
+call super::destroy
+end on
+
+type m_openpopup from menu within m_winmenu
+end type
+
+on m_openpopup.create
+call super::create
+this.text = "Open Popup"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_openpopup.destroy
+call super::destroy
+end on
+
+type m_menuui from menu within m_munu_main
+m_height m_height
+m_width m_width
+m_layer m_layer
+m_item m_item
+m_text m_text
+end type
+
+on m_menuui.create
+call super::create
+this.text = "MenuUI"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_height=create m_height
+this.m_width=create m_width
+this.m_layer=create m_layer
+this.m_item=create m_item
+this.m_text=create m_text
+this.Item[UpperBound(this.Item)+1]=this.m_height
+this.Item[UpperBound(this.Item)+1]=this.m_width
+this.Item[UpperBound(this.Item)+1]=this.m_layer
+this.Item[UpperBound(this.Item)+1]=this.m_item
+this.Item[UpperBound(this.Item)+1]=this.m_text
+end on
+
+on m_menuui.destroy
+call super::destroy
+destroy(this.m_height)
+destroy(this.m_width)
+destroy(this.m_layer)
+destroy(this.m_item)
+destroy(this.m_text)
+end on
+
+type m_height from menu within m_menuui
+end type
+
+on m_height.create
+call super::create
+this.text = "Height"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_height.destroy
+call super::destroy
+end on
+
+type m_width from menu within m_menuui
+end type
+
+on m_width.create
+call super::create
+this.text = "Width"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_width.destroy
+call super::destroy
+end on
+
+type m_layer from menu within m_menuui
+end type
+
+on m_layer.create
+call super::create
+this.text = "Layer"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_layer.destroy
+call super::destroy
+end on
+
+type m_item from menu within m_menuui
+end type
+
+on m_item.create
+call super::create
+this.text = "Item"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_item.destroy
+call super::destroy
+end on
+
+type m_text from menu within m_menuui
+end type
+
+on m_text.create
+call super::create
+this.text = "Text"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_text.destroy
+call super::destroy
+end on
+
+type m_cascade from menu within m_munu_main
+m_cascadeproperty m_cascadeproperty
+m_cascadeevent m_cascadeevent
+ascade ascade
+m_cascadedynamiccreate m_cascadedynamiccreate
+m_cascadenestproperty m_cascadenestproperty
+m_nestmenucascadeevent m_nestmenucascadeevent
+m_inhertcascadeobject m_inhertcascadeobject
+m_cascadeothers m_cascadeothers
+end type
+
+on m_cascade.create
+call super::create
+this.text = "Cascade"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_cascadeproperty=create m_cascadeproperty
+this.m_cascadeevent=create m_cascadeevent
+this.ascade=create ascade
+this.m_cascadedynamiccreate=create m_cascadedynamiccreate
+this.m_cascadenestproperty=create m_cascadenestproperty
+this.m_nestmenucascadeevent=create m_nestmenucascadeevent
+this.m_inhertcascadeobject=create m_inhertcascadeobject
+this.m_cascadeothers=create m_cascadeothers
+this.Item[UpperBound(this.Item)+1]=this.m_cascadeproperty
+this.Item[UpperBound(this.Item)+1]=this.m_cascadeevent
+this.Item[UpperBound(this.Item)+1]=this.ascade
+this.Item[UpperBound(this.Item)+1]=this.m_cascadedynamiccreate
+this.Item[UpperBound(this.Item)+1]=this.m_cascadenestproperty
+this.Item[UpperBound(this.Item)+1]=this.m_nestmenucascadeevent
+this.Item[UpperBound(this.Item)+1]=this.m_inhertcascadeobject
+this.Item[UpperBound(this.Item)+1]=this.m_cascadeothers
+end on
+
+on m_cascade.destroy
+call super::destroy
+destroy(this.m_cascadeproperty)
+destroy(this.m_cascadeevent)
+destroy(this.ascade)
+destroy(this.m_cascadedynamiccreate)
+destroy(this.m_cascadenestproperty)
+destroy(this.m_nestmenucascadeevent)
+destroy(this.m_inhertcascadeobject)
+destroy(this.m_cascadeothers)
+end on
+
+type m_cascadeproperty from menu within m_cascade
+m_property01 m_property01
+end type
+
+on m_cascadeproperty.create
+call super::create
+this.text = "CascadeProperty"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_property01=create m_property01
+this.Item[UpperBound(this.Item)+1]=this.m_property01
+end on
+
+on m_cascadeproperty.destroy
+call super::destroy
+destroy(this.m_property01)
+end on
+
+type m_property01 from menu within m_cascadeproperty
+end type
+
+on m_property01.create
+call super::create
+this.text = "property01"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_property01.destroy
+call super::destroy
+end on
+
+type m_cascadeevent from menu within m_cascade
+end type
+
+on m_cascadeevent.create
+call super::create
+this.text = "CascadeEvent"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_cascadeevent.destroy
+call super::destroy
+end on
+
+type ascade from menu within m_cascade
+end type
+
+on ascade.create
+call super::create
+this.text = "CascadeFunction"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on ascade.destroy
+call super::destroy
+end on
+
+type m_cascadedynamiccreate from menu within m_cascade
+end type
+
+on m_cascadedynamiccreate.create
+call super::create
+this.text = "CascadeDynamicCreate"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_cascadedynamiccreate.destroy
+call super::destroy
+end on
+
+type m_cascadenestproperty from menu within m_cascade
+end type
+
+on m_cascadenestproperty.create
+call super::create
+this.text = "CascadeNestProperty"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_cascadenestproperty.destroy
+call super::destroy
+end on
+
+type m_nestmenucascadeevent from menu within m_cascade
+end type
+
+on m_nestmenucascadeevent.create
+call super::create
+this.text = "NestMenuCascadeEvent"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_nestmenucascadeevent.destroy
+call super::destroy
+end on
+
+type m_inhertcascadeobject from menu within m_cascade
+end type
+
+on m_inhertcascadeobject.create
+call super::create
+this.text = "InhertCascadeObject"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_inhertcascadeobject.destroy
+call super::destroy
+end on
+
+type m_cascadeothers from menu within m_cascade
+end type
+
+on m_cascadeothers.create
+call super::create
+this.text = "CascadeOthers"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_cascadeothers.destroy
+call super::destroy
+end on
+
+type m_menuitem from menu within m_munu_main
+m_item0 m_item0
+m_sequence m_sequence
+end type
+
+on m_menuitem.create
+call super::create
+this.text = "MenuItem"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_item0=create m_item0
+this.m_sequence=create m_sequence
+this.Item[UpperBound(this.Item)+1]=this.m_item0
+this.Item[UpperBound(this.Item)+1]=this.m_sequence
+end on
+
+on m_menuitem.destroy
+call super::destroy
+destroy(this.m_item0)
+destroy(this.m_sequence)
+end on
+
+type m_item0 from menu within m_menuitem
+end type
+
+on m_item0.create
+call super::create
+this.text = "Item[]"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_item0.destroy
+call super::destroy
+end on
+
+type m_sequence from menu within m_menuitem
+end type
+
+on m_sequence.create
+call super::create
+this.text = "Sequence"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_sequence.destroy
+call super::destroy
+end on
+
+type m_calluimenu from menu within m_munu_main
+m_call_openwindow m_call_openwindow
+m_call_opensheetwindow m_call_opensheetwindow
+m_samemenu1 m_samemenu1
+m_samemenu2 m_samemenu2
+end type
+
+on m_calluimenu.create
+call super::create
+this.text = "CallUIMenu"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_call_openwindow=create m_call_openwindow
+this.m_call_opensheetwindow=create m_call_opensheetwindow
+this.m_samemenu1=create m_samemenu1
+this.m_samemenu2=create m_samemenu2
+this.Item[UpperBound(this.Item)+1]=this.m_call_openwindow
+this.Item[UpperBound(this.Item)+1]=this.m_call_opensheetwindow
+this.Item[UpperBound(this.Item)+1]=this.m_samemenu1
+this.Item[UpperBound(this.Item)+1]=this.m_samemenu2
+end on
+
+on m_calluimenu.destroy
+call super::destroy
+destroy(this.m_call_openwindow)
+destroy(this.m_call_opensheetwindow)
+destroy(this.m_samemenu1)
+destroy(this.m_samemenu2)
+end on
+
+type m_call_openwindow from menu within m_calluimenu
+end type
+
+on m_call_openwindow.create
+call super::create
+this.text = "Call_Open(window)"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_call_openwindow.destroy
+call super::destroy
+end on
+
+type m_call_opensheetwindow from menu within m_calluimenu
+end type
+
+on m_call_opensheetwindow.create
+call super::create
+this.text = "Call_OpenSheet(window)"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_call_opensheetwindow.destroy
+call super::destroy
+end on
+
+type m_samemenu1 from menu within m_calluimenu
+end type
+
+on m_samemenu1.create
+call super::create
+this.text = "Same Menu1"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_samemenu1.destroy
+call super::destroy
+end on
+
+type m_samemenu2 from menu within m_calluimenu
+end type
+
+on m_samemenu2.create
+call super::create
+this.text = "Same Menu2"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_samemenu2.destroy
+call super::destroy
+end on
+
+type m_menuvardef from menu within m_munu_main
+m_scope m_scope
+m_create m_create
+m_evaluate m_evaluate
+end type
+
+on m_menuvardef.create
+call super::create
+this.text = "MenuVarDef"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_scope=create m_scope
+this.m_create=create m_create
+this.m_evaluate=create m_evaluate
+this.Item[UpperBound(this.Item)+1]=this.m_scope
+this.Item[UpperBound(this.Item)+1]=this.m_create
+this.Item[UpperBound(this.Item)+1]=this.m_evaluate
+end on
+
+on m_menuvardef.destroy
+call super::destroy
+destroy(this.m_scope)
+destroy(this.m_create)
+destroy(this.m_evaluate)
+end on
+
+type m_scope from menu within m_menuvardef
+end type
+
+on m_scope.create
+call super::create
+this.text = "Scope"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_scope.destroy
+call super::destroy
+end on
+
+type m_create from menu within m_menuvardef
+end type
+
+on m_create.create
+call super::create
+this.text = "Create"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_create.destroy
+call super::destroy
+end on
+
+type m_evaluate from menu within m_menuvardef
+end type
+
+on m_evaluate.create
+call super::create
+this.text = "Evaluate"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_evaluate.destroy
+call super::destroy
+end on
+
+type m_toolbar from menu within m_munu_main
+m_toolbartips m_toolbartips
+m_toolbarvisible m_toolbarvisible
+m_menutoolbar m_menutoolbar
+m_menuuitoolbar m_menuuitoolbar
+end type
+
+on m_toolbar.create
+call super::create
+this.text = "ToolBar"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_toolbartips=create m_toolbartips
+this.m_toolbarvisible=create m_toolbarvisible
+this.m_menutoolbar=create m_menutoolbar
+this.m_menuuitoolbar=create m_menuuitoolbar
+this.Item[UpperBound(this.Item)+1]=this.m_toolbartips
+this.Item[UpperBound(this.Item)+1]=this.m_toolbarvisible
+this.Item[UpperBound(this.Item)+1]=this.m_menutoolbar
+this.Item[UpperBound(this.Item)+1]=this.m_menuuitoolbar
+end on
+
+on m_toolbar.destroy
+call super::destroy
+destroy(this.m_toolbartips)
+destroy(this.m_toolbarvisible)
+destroy(this.m_menutoolbar)
+destroy(this.m_menuuitoolbar)
+end on
+
+type m_toolbartips from menu within m_toolbar
+end type
+
+on m_toolbartips.create
+call super::create
+this.text = "Toolbar Tips"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_toolbartips.destroy
+call super::destroy
+end on
+
+type m_toolbarvisible from menu within m_toolbar
+end type
+
+on m_toolbarvisible.create
+call super::create
+this.text = "Toolbar Visible"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_toolbarvisible.destroy
+call super::destroy
+end on
+
+type m_menutoolbar from menu within m_toolbar
+m_toolbaritembarindex m_toolbaritembarindex
+m_toolbaritemname m_toolbaritemname
+m_toolbaritemorder m_toolbaritemorder
+m_toolbaritem m_toolbaritem
+end type
+
+on m_menutoolbar.create
+call super::create
+this.text = "Menu Toolbar"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_toolbaritembarindex=create m_toolbaritembarindex
+this.m_toolbaritemname=create m_toolbaritemname
+this.m_toolbaritemorder=create m_toolbaritemorder
+this.m_toolbaritem=create m_toolbaritem
+this.Item[UpperBound(this.Item)+1]=this.m_toolbaritembarindex
+this.Item[UpperBound(this.Item)+1]=this.m_toolbaritemname
+this.Item[UpperBound(this.Item)+1]=this.m_toolbaritemorder
+this.Item[UpperBound(this.Item)+1]=this.m_toolbaritem
+end on
+
+on m_menutoolbar.destroy
+call super::destroy
+destroy(this.m_toolbaritembarindex)
+destroy(this.m_toolbaritemname)
+destroy(this.m_toolbaritemorder)
+destroy(this.m_toolbaritem)
+end on
+
+type m_toolbaritembarindex from menu within m_menutoolbar
+end type
+
+on m_toolbaritembarindex.create
+call super::create
+this.text = "ToolbarItemBarIndex"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_toolbaritembarindex.destroy
+call super::destroy
+end on
+
+type m_toolbaritemname from menu within m_menutoolbar
+end type
+
+on m_toolbaritemname.create
+call super::create
+this.text = "ToolbarItemName"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_toolbaritemname.destroy
+call super::destroy
+end on
+
+type m_toolbaritemorder from menu within m_menutoolbar
+end type
+
+on m_toolbaritemorder.create
+call super::create
+this.text = "ToolbarItemOrder"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_toolbaritemorder.destroy
+call super::destroy
+end on
+
+type m_toolbaritem from menu within m_menutoolbar
+end type
+
+on m_toolbaritem.create
+call super::create
+this.text = "ToolbarItem"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_toolbaritem.destroy
+call super::destroy
+end on
+
+type m_menuuitoolbar from menu within m_toolbar
+m_mdiwithouttoolbar m_mdiwithouttoolbar
+m_toolbarwidth m_toolbarwidth
+m_picture m_picture
+end type
+
+on m_menuuitoolbar.create
+call super::create
+this.text = "Menu UIToolbar"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+this.m_mdiwithouttoolbar=create m_mdiwithouttoolbar
+this.m_toolbarwidth=create m_toolbarwidth
+this.m_picture=create m_picture
+this.Item[UpperBound(this.Item)+1]=this.m_mdiwithouttoolbar
+this.Item[UpperBound(this.Item)+1]=this.m_toolbarwidth
+this.Item[UpperBound(this.Item)+1]=this.m_picture
+end on
+
+on m_menuuitoolbar.destroy
+call super::destroy
+destroy(this.m_mdiwithouttoolbar)
+destroy(this.m_toolbarwidth)
+destroy(this.m_picture)
+end on
+
+type m_mdiwithouttoolbar from menu within m_menuuitoolbar
+end type
+
+on m_mdiwithouttoolbar.create
+call super::create
+this.text = "Mdi Without ToolBar"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_mdiwithouttoolbar.destroy
+call super::destroy
+end on
+
+type m_toolbarwidth from menu within m_menuuitoolbar
+end type
+
+on m_toolbarwidth.create
+call super::create
+this.text = "ToolBar Width"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_toolbarwidth.destroy
+call super::destroy
+end on
+
+type m_picture from menu within m_menuuitoolbar
+end type
+
+on m_picture.create
+call super::create
+this.text = "Picture"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_picture.destroy
+call super::destroy
+end on
+
+type m_autorun from menu within m_munu_main
+end type
+
+on m_autorun.create
+call super::create
+this.text = "AutoRun"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_autorun.destroy
+call super::destroy
+end on
+
+type m_exit from menu within m_munu_main
+end type
+
+on m_exit.create
+call super::create
+this.text = "Exit"
+this.menutextcolor = 134217735
+this.menubackcolor = 134217732
+this.menuhighlightcolor = 134217741
+this.textsize = 8
+this.weight = 400
+this.facename = "Tahoma"
+this.titlebackcolor = 134217730
+this.bitmapbackcolor = 12632256
+this.menubitmaps = true
+this.titlegradient = true
+this.toolbartextcolor = 134217746
+this.toolbarbackcolor = 67108864
+this.toolbarhighlightcolor = 134217741
+this.toolbargradient = true
+this.bitmapgradient = true
+end on
+
+on m_exit.destroy
+call super::destroy
+end on
+

@@ -1,0 +1,15 @@
+﻿$PBExportHeader$unsupportedencodingexception.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type UnsupportedEncodingException from IOException
+end type
+
+type variables
+ protected:
+string UnsupportedEncodingException_javaname= "java.io.UnsupportedEncodingException" 
+end variables
+
+forward prototypes
+ public:
+subroutine  UnsupportedEncodingException()  alias for "<init>,()V"
+subroutine  UnsupportedEncodingException( string string_1)  alias for "<init>,(Ljava/lang/String;)V"
+end prototypes

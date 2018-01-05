@@ -1,0 +1,14 @@
+﻿$PBExportHeader$flushable.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Flushable from nonvisualobject
+end type
+
+type variables
+ protected:
+string Flushable_javaname= "java.io.Flushable" 
+end variables
+
+forward prototypes
+ public:
+subroutine  flush() throws IOException alias for "flush,()V"
+end prototypes

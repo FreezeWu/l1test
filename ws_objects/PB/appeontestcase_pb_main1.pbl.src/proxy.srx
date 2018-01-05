@@ -1,0 +1,26 @@
+﻿$PBExportHeader$proxy.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Proxy from nonvisualobject
+end type
+
+type variables
+ protected:
+string Proxy_javaname= "java.net.Proxy" 
+
+ public:
+indirect Proxy NO_PROXY { __set_NO_PROXY(*value), __get_NO_PROXY() }
+end variables
+
+forward prototypes
+ private:
+function Proxy __get_NO_PROXY()  alias for "R:NO_PROXY,Ljava/net/Proxy;"
+subroutine  __set_NO_PROXY( Proxy NO_PROXY)  alias for "W:NO_PROXY,Ljava/net/Proxy;"
+
+ public:
+subroutine  Proxy( java_Type java_Type_1, SocketAddress SocketAddress_2)  alias for "<init>,(Ljava/net/Proxy$Type;Ljava/net/SocketAddress;)V"
+function SocketAddress address()  alias for "address,()Ljava/net/SocketAddress;"
+function boolean equals( any any_1)  alias for "equals,(Ljava/lang/Object;)Z"
+function long hashCode()  alias for "hashCode,()I"
+function string toString()  alias for "toString,()Ljava/lang/String;"
+function java_Type type_j()  alias for "type,()Ljava/net/Proxy$Type;"
+end prototypes

@@ -1,0 +1,22 @@
+﻿$PBExportHeader$sortedmap.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type SortedMap from Map
+end type
+
+type variables
+ protected:
+string SortedMap_javaname= "java.util.SortedMap" 
+end variables
+
+forward prototypes
+ public:
+function Comparator comparator()  alias for "comparator,()Ljava/util/Comparator;"
+function Set entrySet()  alias for "entrySet,()Ljava/util/Set;"
+function any firstKey()  alias for "firstKey,()Ljava/lang/Object;"
+function SortedMap headMap( any any_1)  alias for "headMap,(Ljava/lang/Object;)Ljava/util/SortedMap;"
+function Set keySet()  alias for "keySet,()Ljava/util/Set;"
+function any lastKey()  alias for "lastKey,()Ljava/lang/Object;"
+function SortedMap subMap( any any_1, any any_2)  alias for "subMap,(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedMap;"
+function SortedMap tailMap( any any_1)  alias for "tailMap,(Ljava/lang/Object;)Ljava/util/SortedMap;"
+function Collection values()  alias for "values,()Ljava/util/Collection;"
+end prototypes

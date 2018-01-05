@@ -1,0 +1,17 @@
+﻿$PBExportHeader$charsequence.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type CharSequence from nonvisualobject
+end type
+
+type variables
+ protected:
+string CharSequence_javaname= "java.lang.CharSequence" 
+end variables
+
+forward prototypes
+ public:
+function char charAt( long long_1)  alias for "charAt,(I)C"
+function long length()  alias for "length,()I"
+function CharSequence subSequence( long long_1, long long_2)  alias for "subSequence,(II)Ljava/lang/CharSequence;"
+function string toString()  alias for "toString,()Ljava/lang/String;"
+end prototypes

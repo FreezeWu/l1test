@@ -1,0 +1,40 @@
+﻿$PBExportHeader$deque.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Deque from Queue
+end type
+
+type variables
+ protected:
+string Deque_javaname= "java.util.Deque" 
+end variables
+
+forward prototypes
+ public:
+function boolean add( any any_1)  alias for "add,(Ljava/lang/Object;)Z"
+subroutine  addFirst( any any_1)  alias for "addFirst,(Ljava/lang/Object;)V"
+subroutine  addLast( any any_1)  alias for "addLast,(Ljava/lang/Object;)V"
+function boolean contains( any any_1)  alias for "contains,(Ljava/lang/Object;)Z"
+function Iterator descendingIterator()  alias for "descendingIterator,()Ljava/util/Iterator;"
+function any element()  alias for "element,()Ljava/lang/Object;"
+function any getFirst()  alias for "getFirst,()Ljava/lang/Object;"
+function any getLast()  alias for "getLast,()Ljava/lang/Object;"
+function Iterator iterator()  alias for "iterator,()Ljava/util/Iterator;"
+function boolean offer( any any_1)  alias for "offer,(Ljava/lang/Object;)Z"
+function boolean offerFirst( any any_1)  alias for "offerFirst,(Ljava/lang/Object;)Z"
+function boolean offerLast( any any_1)  alias for "offerLast,(Ljava/lang/Object;)Z"
+function any peek()  alias for "peek,()Ljava/lang/Object;"
+function any peekFirst()  alias for "peekFirst,()Ljava/lang/Object;"
+function any peekLast()  alias for "peekLast,()Ljava/lang/Object;"
+function any poll()  alias for "poll,()Ljava/lang/Object;"
+function any pollFirst()  alias for "pollFirst,()Ljava/lang/Object;"
+function any pollLast()  alias for "pollLast,()Ljava/lang/Object;"
+function any pop()  alias for "pop,()Ljava/lang/Object;"
+subroutine  push( any any_1)  alias for "push,(Ljava/lang/Object;)V"
+function any remove()  alias for "remove,()Ljava/lang/Object;"
+function boolean remove( any any_1)  alias for "remove,(Ljava/lang/Object;)Z"
+function any removeFirst()  alias for "removeFirst,()Ljava/lang/Object;"
+function boolean removeFirstOccurrence( any any_1)  alias for "removeFirstOccurrence,(Ljava/lang/Object;)Z"
+function any removeLast()  alias for "removeLast,()Ljava/lang/Object;"
+function boolean removeLastOccurrence( any any_1)  alias for "removeLastOccurrence,(Ljava/lang/Object;)Z"
+function long size()  alias for "size,()I"
+end prototypes

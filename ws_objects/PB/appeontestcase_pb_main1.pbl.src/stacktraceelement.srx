@@ -1,0 +1,22 @@
+﻿$PBExportHeader$stacktraceelement.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type StackTraceElement from nonvisualobject
+end type
+
+type variables
+ protected:
+string StackTraceElement_javaname= "java.lang.StackTraceElement" 
+end variables
+
+forward prototypes
+ public:
+subroutine  StackTraceElement( string string_1, string string_2, string string_3, long long_4)  alias for "<init>,(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V"
+function boolean equals( any any_1)  alias for "equals,(Ljava/lang/Object;)Z"
+function string getClassName()  alias for "getClassName,()Ljava/lang/String;"
+function string getFileName()  alias for "getFileName,()Ljava/lang/String;"
+function long getLineNumber()  alias for "getLineNumber,()I"
+function string getMethodName()  alias for "getMethodName,()Ljava/lang/String;"
+function long hashCode()  alias for "hashCode,()I"
+function boolean isNativeMethod()  alias for "isNativeMethod,()Z"
+function string toString()  alias for "toString,()Ljava/lang/String;"
+end prototypes

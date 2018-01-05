@@ -1,0 +1,14 @@
+﻿$PBExportHeader$guard.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Guard from nonvisualobject
+end type
+
+type variables
+ protected:
+string Guard_javaname= "java.security.Guard" 
+end variables
+
+forward prototypes
+ public:
+subroutine  checkGuard( any any_1) throws SecurityException alias for "checkGuard,(Ljava/lang/Object;)V"
+end prototypes

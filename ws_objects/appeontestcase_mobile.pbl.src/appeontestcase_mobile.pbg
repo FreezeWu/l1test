@@ -1,0 +1,7 @@
+﻿Save Format v3.0(19990112)
+@begin Libraries
+ "appeontestcase_mobile.pbl" "";
+@end;
+@begin Objects 
+ "appeontestcase_mobile.sra" "appeontestcase_mobile.pbl";
+@end;

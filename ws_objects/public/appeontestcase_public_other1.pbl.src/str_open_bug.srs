@@ -1,0 +1,15 @@
+﻿$PBExportHeader$str_open_bug.srs
+global type str_open_bug from structure
+	long		productversion
+	long		tester
+	long		webserver
+	long		webos
+	long		appserver
+	long		appos
+	long		dbms
+	long		dbmsos
+	long		clientos
+	string		ieversion
+	string		operatestep
+end type
+

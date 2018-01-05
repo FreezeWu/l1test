@@ -1,0 +1,35 @@
+﻿$PBExportHeader$d_f174a06_1.srd
+release 8;
+datawindow(units=0 timer_interval=0 color=1073741824 processing=1 HTMLDW=no print.documentname="" print.orientation = 0 print.margin.left = 110 print.margin.right = 110 print.margin.top = 96 print.margin.bottom = 96 print.paper.source = 0 print.paper.size = 0 print.prompt=no print.buttons=no print.preview.buttons=no grid.lines=0 )
+header(height=72 color="536870912" )
+summary(height=0 color="536870912" )
+footer(height=8 color="536870912" )
+detail(height=88 color="536870912" )
+table(column=(type=char(3) update=yes updatewhereclause=yes key=yes name=c_id dbname="v30_f174_1.c_id" )
+ column=(type=char(20) update=yes updatewhereclause=yes name=v_name dbname="v30_f174_1.v_name" )
+ column=(type=datetime update=yes updatewhereclause=yes name=dt_born dbname="v30_f174_1.dt_born" )
+ column=(type=long update=yes updatewhereclause=yes name=i_arg dbname="v30_f174_1.i_arg" )
+ column=(type=char(1) update=yes updatewhereclause=yes name=c_sex dbname="v30_f174_1.c_sex" )
+ column=(type=decimal(2) update=yes updatewhereclause=yes name=dec_salary dbname="v30_f174_1.dec_salary" )
+ retrieve="  SELECT v30_f174_1.c_id,   
+         v30_f174_1.v_name,   
+         v30_f174_1.dt_born,   
+         v30_f174_1.i_arg,   
+         v30_f174_1.c_sex,   
+         v30_f174_1.dec_salary  
+    FROM v30_f174_1   
+" update="v30_f174_1" updatewhere=1 updatekeyinplace=no )
+text(band=header alignment="2" text="C Id" border="0" color="33554432" x="9" y="4" height="64" width="137" html.valueishtml="0"  name=c_id_t visible="1"  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
+text(band=header alignment="2" text="V Name" border="0" color="33554432" x="155" y="4" height="64" width="283" html.valueishtml="0"  name=v_name_t visible="1"  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
+text(band=header alignment="2" text="Dt Born" border="0" color="33554432" x="448" y="4" height="64" width="626" html.valueishtml="0"  name=dt_born_t visible="1"  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
+text(band=header alignment="2" text="I Arg" border="0" color="33554432" x="1083" y="4" height="64" width="197" html.valueishtml="0"  name=i_arg_t visible="1"  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
+text(band=header alignment="2" text="C Sex" border="0" color="33554432" x="1289" y="4" height="64" width="187" html.valueishtml="0"  name=c_sex_t visible="1"  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
+text(band=header alignment="2" text="Dec Salary" border="0" color="33554432" x="1486" y="4" height="64" width="389" html.valueishtml="0"  name=dec_salary_t visible="1"  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
+column(band=detail id=1 alignment="2" tabsequence=10 border="0" color="33554432" x="9" y="0" height="76" width="137" format="[general]" html.valueishtml="0"  name=c_id visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
+column(band=detail id=2 alignment="2" tabsequence=20 border="0" color="33554432" x="155" y="4" height="76" width="283" format="[general]" html.valueishtml="0"  name=v_name visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
+column(band=detail id=3 alignment="2" tabsequence=30 border="0" color="33554432" x="448" y="0" height="76" width="626" format="[shortdate] [time]" html.valueishtml="0"  name=dt_born visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
+column(band=detail id=4 alignment="2" tabsequence=40 border="0" color="33554432" x="1083" y="0" height="76" width="197" format="[general]" html.valueishtml="0"  name=i_arg visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
+column(band=detail id=5 alignment="2" tabsequence=50 border="0" color="33554432" x="1289" y="0" height="76" width="187" format="[general]" html.valueishtml="0"  name=c_sex visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.imemode=0  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
+column(band=detail id=6 alignment="2" tabsequence=60 border="0" color="33554432" x="1486" y="0" height="76" width="389" format="[general]" html.valueishtml="0"  name=dec_salary visible="1" dddw.name=d_f174a06_2 dddw.displaycolumn=dec_salary dddw.datacolumn=dec_salary dddw.percentwidth=500 dddw.lines=0 dddw.limit=0 dddw.allowedit=no dddw.useasborder=no dddw.case=any dddw.imemode=0 dddw.hscrollbar=yes dddw.vscrollbar=yes  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" netscapelayers="0" )

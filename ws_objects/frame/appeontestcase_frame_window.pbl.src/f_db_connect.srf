@@ -1,0 +1,79 @@
+﻿$PBExportHeader$f_db_connect.srf
+$PBExportComments$Function to connect to database      FSW
+global type f_db_connect from function_object
+end type
+
+forward prototypes
+global function boolean f_db_connect (ref transaction p_dbtrans, string p_dbms, string p_dbvar)
+end prototypes
+
+global function boolean f_db_connect (ref transaction p_dbtrans, string p_dbms, string p_dbvar);	string 	l_trans = "database.ini"
+	string 	l_dbms
+	string 	ls_autocommit
+
+	
+l_dbms = p_dbms
+p_dbvar = upper(l_dbms) 
+choose case upper(l_dbms) 
+	
+ case "OLEDB", "SNC","SNC2","ASE","O10", "IN10", "JDBC_ASA"
+			//aded by maggie to get the current db type
+	 //ADDED BY MAGGIE=====begin ==========
+	p_dbtrans.dbms       = profilestring(l_trans,p_dbvar,"DBMS","")
+	p_dbtrans.database   = profilestring(l_trans,p_dbvar,"Database" ,"")
+	p_dbtrans.logid      = profilestring(l_trans,p_dbvar,"Logid","")
+	p_dbtrans.logpass    = profilestring(l_trans,p_dbvar,"Logpass","")
+	p_dbtrans.servername = profilestring(l_trans,p_dbvar,"Servername","")
+	p_dbtrans.dbparm     = profilestring(l_trans,p_dbvar,"DbParm" ,"")
+	p_dbtrans.UserId      = profilestring(l_trans,p_dbvar,"UserId","")
+	p_dbtrans.DBPass    = profilestring(l_trans,p_dbvar,"DatabasePassword","")	
+	ls_autocommit = profilestring(l_trans,p_dbvar,"AutoCommit","false")
+	If Upper ( ls_autocommit )  = 'TRUE' Then
+		p_dbtrans.autocommit = true
+	Else
+		p_dbtrans.autocommit = false
+	End If
+  case "ODBC","ODBC2",'DB2','ODATA_ASA','POSTSQL_ODBC'   //maggie added DB2
+	p_dbtrans.dbms       = profilestring(l_trans,p_dbvar,"DBMS","")
+	p_dbtrans.logid      = profilestring(l_trans,p_dbvar,"Logid","")
+	p_dbtrans.logpass    = profilestring(l_trans,p_dbvar,"Logpass","")
+	p_dbtrans.dbparm     = profilestring(l_trans,p_dbvar,"DbParm" ,"")
+	ls_autocommit = profilestring(l_trans,p_dbvar,"AutoCommit","false")
+	If Upper ( ls_autocommit )  = 'TRUE' Then
+		p_dbtrans.autocommit = true
+	Else
+		p_dbtrans.autocommit = false
+	End If
+	
+	case "JDBC_ASA", "JDBC_DB2", "JDBC_INF", "JDBC_O10", "JDBC_SQL", "ADOSQL"			
+		p_dbtrans.dbms       = profilestring(l_trans,p_dbvar,"DBMS","")
+		p_dbtrans.database   = profilestring(l_trans,p_dbvar,"Database" ,"")
+		p_dbtrans.logid      = profilestring(l_trans,p_dbvar,"Logid","")
+		p_dbtrans.logpass    = profilestring(l_trans,p_dbvar,"Logpass","")
+		p_dbtrans.servername = profilestring(l_trans,p_dbvar,"Servername","")
+		p_dbtrans.dbparm     = profilestring(l_trans,p_dbvar,"DbParm" ,"")
+		p_dbtrans.UserId      = profilestring(l_trans,p_dbvar,"UserId","")
+		p_dbtrans.DBPass    = profilestring(l_trans,p_dbvar,"DatabasePassword","")	
+		ls_autocommit = profilestring(l_trans,p_dbvar,"AutoCommit","false")
+		If Upper ( ls_autocommit )  = 'TRUE' Then
+			p_dbtrans.autocommit = true
+		Else
+			p_dbtrans.autocommit = false
+		End If
+
+	case else
+		return(FALSE)
+	end choose
+
+
+	connect using p_dbtrans;
+
+
+	if (p_dbtrans.sqlcode = 0) then 
+		return (TRUE)
+	else
+		return (FALSE)
+	end if
+
+end function
+

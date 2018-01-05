@@ -1,0 +1,62 @@
+﻿$PBExportHeader$urlconnection.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type URLConnection from nonvisualobject
+end type
+
+type variables
+ protected:
+string URLConnection_javaname= "java.net.URLConnection" 
+end variables
+
+forward prototypes
+ public:
+subroutine  addRequestProperty( string string_1, string string_2)  alias for "addRequestProperty,(Ljava/lang/String;Ljava/lang/String;)V"
+subroutine  connect_j() throws IOException alias for "connect,()V"
+function boolean getAllowUserInteraction()  alias for "getAllowUserInteraction,()Z"
+function long getConnectTimeout()  alias for "getConnectTimeout,()I"
+function any getContent() throws IOException alias for "getContent,()Ljava/lang/Object;"
+function any getContent( any any_1[]) throws IOException alias for "getContent,([Ljava/lang/Class;)Ljava/lang/Object;"
+function string getContentEncoding()  alias for "getContentEncoding,()Ljava/lang/String;"
+function long getContentLength()  alias for "getContentLength,()I"
+function string getContentType()  alias for "getContentType,()Ljava/lang/String;"
+function longlong getDate()  alias for "getDate,()J"
+function boolean getDefaultAllowUserInteraction()  alias for "getDefaultAllowUserInteraction,()Z"
+function string getDefaultRequestProperty( string string_1)  alias for "getDefaultRequestProperty,(Ljava/lang/String;)Ljava/lang/String;"
+function boolean getDefaultUseCaches()  alias for "getDefaultUseCaches,()Z"
+function boolean getDoInput()  alias for "getDoInput,()Z"
+function boolean getDoOutput()  alias for "getDoOutput,()Z"
+function longlong getExpiration()  alias for "getExpiration,()J"
+function FileNameMap getFileNameMap()  alias for "getFileNameMap,()Ljava/net/FileNameMap;"
+function string getHeaderField( long long_1)  alias for "getHeaderField,(I)Ljava/lang/String;"
+function string getHeaderField( string string_1)  alias for "getHeaderField,(Ljava/lang/String;)Ljava/lang/String;"
+function longlong getHeaderFieldDate( string string_1, longlong longlong_2)  alias for "getHeaderFieldDate,(Ljava/lang/String;J)J"
+function long getHeaderFieldInt( string string_1, long long_2)  alias for "getHeaderFieldInt,(Ljava/lang/String;I)I"
+function string getHeaderFieldKey( long long_1)  alias for "getHeaderFieldKey,(I)Ljava/lang/String;"
+function Map getHeaderFields()  alias for "getHeaderFields,()Ljava/util/Map;"
+function longlong getIfModifiedSince()  alias for "getIfModifiedSince,()J"
+function InputStream getInputStream() throws IOException alias for "getInputStream,()Ljava/io/InputStream;"
+function longlong getLastModified()  alias for "getLastModified,()J"
+function OutputStream getOutputStream() throws IOException alias for "getOutputStream,()Ljava/io/OutputStream;"
+function Permission getPermission() throws IOException alias for "getPermission,()Ljava/security/Permission;"
+function long getReadTimeout()  alias for "getReadTimeout,()I"
+function Map getRequestProperties()  alias for "getRequestProperties,()Ljava/util/Map;"
+function string getRequestProperty( string string_1)  alias for "getRequestProperty,(Ljava/lang/String;)Ljava/lang/String;"
+function URL getURL()  alias for "getURL,()Ljava/net/URL;"
+function boolean getUseCaches()  alias for "getUseCaches,()Z"
+function string guessContentTypeFromName( string string_1)  alias for "guessContentTypeFromName,(Ljava/lang/String;)Ljava/lang/String;"
+function string guessContentTypeFromStream( InputStream InputStream_1) throws IOException alias for "guessContentTypeFromStream,(Ljava/io/InputStream;)Ljava/lang/String;"
+subroutine  setAllowUserInteraction( boolean boolean_1)  alias for "setAllowUserInteraction,(Z)V"
+subroutine  setConnectTimeout( long long_1)  alias for "setConnectTimeout,(I)V"
+subroutine  setContentHandlerFactory( ContentHandlerFactory ContentHandlerFactory_1)  alias for "setContentHandlerFactory,(Ljava/net/ContentHandlerFactory;)V"
+subroutine  setDefaultAllowUserInteraction( boolean boolean_1)  alias for "setDefaultAllowUserInteraction,(Z)V"
+subroutine  setDefaultRequestProperty( string string_1, string string_2)  alias for "setDefaultRequestProperty,(Ljava/lang/String;Ljava/lang/String;)V"
+subroutine  setDefaultUseCaches( boolean boolean_1)  alias for "setDefaultUseCaches,(Z)V"
+subroutine  setDoInput( boolean boolean_1)  alias for "setDoInput,(Z)V"
+subroutine  setDoOutput( boolean boolean_1)  alias for "setDoOutput,(Z)V"
+subroutine  setFileNameMap( FileNameMap FileNameMap_1)  alias for "setFileNameMap,(Ljava/net/FileNameMap;)V"
+subroutine  setIfModifiedSince( longlong longlong_1)  alias for "setIfModifiedSince,(J)V"
+subroutine  setReadTimeout( long long_1)  alias for "setReadTimeout,(I)V"
+subroutine  setRequestProperty( string string_1, string string_2)  alias for "setRequestProperty,(Ljava/lang/String;Ljava/lang/String;)V"
+subroutine  setUseCaches( boolean boolean_1)  alias for "setUseCaches,(Z)V"
+function string toString()  alias for "toString,()Ljava/lang/String;"
+end prototypes

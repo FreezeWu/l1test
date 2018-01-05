@@ -1,0 +1,28 @@
+﻿$PBExportHeader$abstractcollection.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type AbstractCollection from nonvisualobject
+end type
+
+type variables
+ protected:
+string AbstractCollection_javaname= "java.util.AbstractCollection" 
+any i__AbstractCollection__any
+end variables
+
+forward prototypes
+ public:
+function boolean add( any any_1)  alias for "add,(Ljava/lang/Object;)Z"
+function boolean addAll( Collection Collection_1)  alias for "addAll,(Ljava/util/Collection;)Z"
+subroutine  clear()  alias for "clear,()V"
+function boolean contains( any any_1)  alias for "contains,(Ljava/lang/Object;)Z"
+function boolean containsAll( Collection Collection_1)  alias for "containsAll,(Ljava/util/Collection;)Z"
+function boolean isEmpty()  alias for "isEmpty,()Z"
+function Iterator iterator()  alias for "iterator,()Ljava/util/Iterator;"
+function boolean remove( any any_1)  alias for "remove,(Ljava/lang/Object;)Z"
+function boolean removeAll( Collection Collection_1)  alias for "removeAll,(Ljava/util/Collection;)Z"
+function boolean retainAll( Collection Collection_1)  alias for "retainAll,(Ljava/util/Collection;)Z"
+function long size()  alias for "size,()I"
+function any toArray()  alias for "toArray,()[Ljava/lang/Object;|any"
+function any toArray( any any_1[])  alias for "toArray,([Ljava/lang/Object;)[Ljava/lang/Object;|any"
+function string toString()  alias for "toString,()Ljava/lang/String;"
+end prototypes

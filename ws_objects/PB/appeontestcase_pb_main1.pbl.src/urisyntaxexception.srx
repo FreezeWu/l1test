@@ -1,0 +1,19 @@
+﻿$PBExportHeader$urisyntaxexception.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type URISyntaxException from exception
+end type
+
+type variables
+ protected:
+string URISyntaxException_javaname= "java.net.URISyntaxException" 
+end variables
+
+forward prototypes
+ public:
+subroutine  URISyntaxException( string string_1, string string_2)  alias for "<init>,(Ljava/lang/String;Ljava/lang/String;)V"
+subroutine  URISyntaxException( string string_1, string string_2, long long_3)  alias for "<init>,(Ljava/lang/String;Ljava/lang/String;I)V"
+function long getIndex()  alias for "getIndex,()I"
+function string getInput()  alias for "getInput,()Ljava/lang/String;"
+function string getMessage()  alias for "getMessage,()Ljava/lang/String;"
+function string getReason()  alias for "getReason,()Ljava/lang/String;"
+end prototypes

@@ -1,0 +1,15 @@
+﻿$PBExportHeader$malformedurlexception.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type MalformedURLException from IOException
+end type
+
+type variables
+ protected:
+string MalformedURLException_javaname= "java.net.MalformedURLException" 
+end variables
+
+forward prototypes
+ public:
+subroutine  MalformedURLException()  alias for "<init>,()V"
+subroutine  MalformedURLException( string string_1)  alias for "<init>,(Ljava/lang/String;)V"
+end prototypes

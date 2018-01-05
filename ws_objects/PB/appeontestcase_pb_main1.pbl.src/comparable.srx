@@ -1,0 +1,14 @@
+﻿$PBExportHeader$comparable.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Comparable from nonvisualobject
+end type
+
+type variables
+ protected:
+string Comparable_javaname= "java.lang.Comparable" 
+end variables
+
+forward prototypes
+ public:
+function long compareTo( any any_1)  alias for "compareTo,(Ljava/lang/Object;)I"
+end prototypes

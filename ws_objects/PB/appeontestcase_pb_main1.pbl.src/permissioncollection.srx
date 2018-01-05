@@ -1,0 +1,20 @@
+﻿$PBExportHeader$permissioncollection.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type PermissionCollection from nonvisualobject
+end type
+
+type variables
+ protected:
+string PermissionCollection_javaname= "java.security.PermissionCollection" 
+end variables
+
+forward prototypes
+ public:
+subroutine  PermissionCollection()  alias for "<init>,()V"
+subroutine  add( Permission Permission_1)  alias for "add,(Ljava/security/Permission;)V"
+function Enumeration elements()  alias for "elements,()Ljava/util/Enumeration;"
+function boolean implies( Permission Permission_1)  alias for "implies,(Ljava/security/Permission;)Z"
+function boolean isReadOnly()  alias for "isReadOnly,()Z"
+subroutine  setReadOnly()  alias for "setReadOnly,()V"
+function string toString()  alias for "toString,()Ljava/lang/String;"
+end prototypes

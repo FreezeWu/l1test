@@ -1,0 +1,52 @@
+﻿$PBExportHeader$d_testpoint_templet.srd
+release 8;
+datawindow(units=0 timer_interval=0 color=1073741824 processing=1 HTMLDW=no print.documentname="" print.orientation = 0 print.margin.left = 110 print.margin.right = 110 print.margin.top = 96 print.margin.bottom = 96 print.paper.source = 0 print.paper.size = 0 print.prompt=no print.buttons=no print.preview.buttons=no grid.lines=0 )
+header(height=80 color="536870912" )
+summary(height=0 color="536870912" )
+footer(height=0 color="536870912" )
+detail(height=88 color="536870912" )
+table(column=(type=long updatewhereclause=yes key=yes identity=yes name=testpointid dbname="TestPoint.TestPointId" )
+ column=(type=char(16) updatewhereclause=yes name=tpno dbname="TestPoint.TPNO" )
+ column=(type=char(100) updatewhereclause=yes name=cndesc dbname="TestPoint.CnDesc" )
+ column=(type=char(100) updatewhereclause=yes name=endesc dbname="TestPoint.EnDesc" )
+ column=(type=long updatewhereclause=yes name=windowid dbname="TestPoint.Windowid" )
+ column=(type=char(8) updatewhereclause=yes name=support dbname="TestPoint.support" initial="1" values="	1/	0" )
+ column=(type=char(4099) updatewhereclause=yes name=expectdesc dbname="TestPoint.Expectdesc" )
+ column=(type=char(4099) updatewhereclause=no name=teststep dbname="TestPoint.teststep" )
+ column=(type=char(100) update=yes updatewhereclause=yes name=expectvalue dbname="TestPoint.ExpectValue" )
+ column=(type=char(50) updatewhereclause=yes name=querykey dbname="TestPoint.QueryKey" )
+ column=(type=char(1) updatewhereclause=yes name=testlevel dbname="TestPoint.TestLevel" )
+ column=(type=char(255) updatewhereclause=yes name=remark dbname="TestPoint.Remark" )
+ column=(type=long updatewhereclause=yes name=runtimes dbname="TestPoint.runtimes" )
+ column=(type=char(100) updatewhereclause=yes name=truevalue dbname="truevalue" )
+ column=(type=char(1) updatewhereclause=yes name=is_run dbname="is_run" initial="0" values="Yes	1/No	0/" )
+ column=(type=char(1) updatewhereclause=yes name=status dbname="status" values="Failed	0/Passed	1/N//A	2/Not Run	3/Not Completed	4/" )
+ column=(type=char(100) updatewhereclause=yes name=pstatus dbname="Pstatus" )
+ retrieve="  SELECT TestPoint.TestPointId,   
+         TestPoint.TPNO,   
+         TestPoint.CnDesc,   
+         TestPoint.EnDesc,   
+         TestPoint.Windowid,   
+         testpoint.support,     
+			TestPoint.Expectdesc, 
+			TestPoint.teststep,  
+         TestPoint.ExpectValue,   
+         TestPoint.QueryKey,    
+         TestPoint.TestLevel,    
+         TestPoint.Remark  ,
+			TestPoint.runtimes,
+			truevalue = space(100),
+			is_run = space(1),
+			status = '3',
+			Pstatus = space(100)
+					 
+    FROM TestPoint    
+" update="TestPoint" updatewhere=1 updatekeyinplace=no  sort="tpno A " )
+text(band=header alignment="2" text="Test Point" border="6" color="33554432" x="9" y="8" height="64" width="658" html.valueishtml="0"  name=tpno_t visible="1"  font.face="宋体" font.height="-10" font.weight="400"  font.family="0" font.pitch="2" font.charset="134" background.mode="2" background.color="134217739" )
+text(band=header alignment="2" text="Describe" border="6" color="33554432" x="677" y="8" height="64" width="1687" html.valueishtml="0"  name=cndesc_t visible="1"  font.face="宋体" font.height="-10" font.weight="400"  font.family="0" font.pitch="2" font.charset="134" background.mode="2" background.color="134217739" )
+text(band=header alignment="2" text="Status" border="6" color="33554432" x="2373" y="8" height="64" width="425" html.valueishtml="0"  name=status_t visible="1"  font.face="宋体" font.height="-10" font.weight="400"  font.family="0" font.pitch="2" font.charset="134" background.mode="2" background.color="134217739" )
+column(band=detail id=2 alignment="0" tabsequence=10 border="0" color="33554432~tif (is_success = '0', rgb(255, 0,0), if(is_run = '1' , rgb(0, 0, 255), rgb(0,0,0)))" x="9" y="4" height="80" width="658" format="[general]" html.valueishtml="0"  name=tpno  tag="测试点编号" visible="1" edit.limit=16 edit.case=any edit.focusrectangle=no edit.autoselect=yes edit.autohscroll=yes edit.imemode=0 edit.displayonly=yes  font.face="宋体" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="134" background.mode="1" background.color="536870912" )
+column(band=detail id=16 alignment="0" tabsequence=30 border="0" color="33554432" x="2373" y="4" height="80" width="425" format="[general]" html.valueishtml="0"  name=status visible="0" edit.name="Is_Success" ddlb.limit=0 ddlb.allowedit=no ddlb.case=any ddlb.nilisnull=yes ddlb.imemode=0  font.face="宋体" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="134" background.mode="1" background.color="536870912" )
+column(band=detail id=3 alignment="0" tabsequence=20 border="0" color="33554432" x="677" y="4" height="80" width="1687" format="[general]" html.valueishtml="0"  name=cndesc visible="1" edit.limit=0 edit.case=any edit.autoselect=yes edit.imemode=0  font.face="宋体" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="134" background.mode="2" background.color="1073741824" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" netscapelayers="0" )

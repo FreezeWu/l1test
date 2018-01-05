@@ -1,0 +1,35 @@
+﻿$PBExportHeader$name.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Name from Cloneable
+end type
+
+type variables
+ protected:
+string Name_javaname= "javax.naming.Name" 
+
+ public:
+indirect longlong serialVersionUID { __set_serialVersionUID(*value), __get_serialVersionUID() }
+end variables
+
+forward prototypes
+ private:
+function longlong __get_serialVersionUID()  alias for "R:serialVersionUID,J"
+subroutine  __set_serialVersionUID( longlong serialVersionUID)  alias for "W:serialVersionUID,J"
+
+ public:
+function Name add( long long_1, string string_2) throws InvalidNameException alias for "add,(ILjava/lang/String;)Ljavax/naming/Name;"
+function Name add( string string_1) throws InvalidNameException alias for "add,(Ljava/lang/String;)Ljavax/naming/Name;"
+function Name addAll( long long_1, Name Name_2) throws InvalidNameException alias for "addAll,(ILjavax/naming/Name;)Ljavax/naming/Name;"
+function Name addAll( Name Name_1) throws InvalidNameException alias for "addAll,(Ljavax/naming/Name;)Ljavax/naming/Name;"
+function any clone()  alias for "clone,()Ljava/lang/Object;"
+function long compareTo( any any_1)  alias for "compareTo,(Ljava/lang/Object;)I"
+function boolean endsWith( Name Name_1)  alias for "endsWith,(Ljavax/naming/Name;)Z"
+function string get( long long_1)  alias for "get,(I)Ljava/lang/String;"
+function Enumeration getAll()  alias for "getAll,()Ljava/util/Enumeration;"
+function Name getPrefix( long long_1)  alias for "getPrefix,(I)Ljavax/naming/Name;"
+function Name getSuffix( long long_1)  alias for "getSuffix,(I)Ljavax/naming/Name;"
+function boolean isEmpty()  alias for "isEmpty,()Z"
+function any remove( long long_1) throws InvalidNameException alias for "remove,(I)Ljava/lang/Object;"
+function long size()  alias for "size,()I"
+function boolean startsWith( Name Name_1)  alias for "startsWith,(Ljavax/naming/Name;)Z"
+end prototypes

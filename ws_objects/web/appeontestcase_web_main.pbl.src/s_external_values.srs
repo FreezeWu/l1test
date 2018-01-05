@@ -1,0 +1,6 @@
+﻿$PBExportHeader$s_external_values.srs
+global type s_external_values from structure
+	string		value_1
+	string		value_2
+end type
+

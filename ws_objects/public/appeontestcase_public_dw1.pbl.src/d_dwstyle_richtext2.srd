@@ -1,0 +1,23 @@
+﻿$PBExportHeader$d_dwstyle_richtext2.srd
+$PBExportComments$Tabular: list of employees, sorted by department, with saalries and total salary; used as data source to produce printed report in w_print_employee_roster
+release 8;
+datawindow(units=2 timer_interval=0 color=1073741824 processing=7 print.documentname="" print.orientation = 0 print.margin.left = 250 print.margin.right = 250 print.margin.top = 250 print.margin.bottom = 250 print.paper.source = 0 print.paper.size = 0 print.prompt=no richtext.headerfooter=yes richtext.wordwrap=yes richtext.popmenu=yes richtext.pictureframe=no richtext.inputfieldnamesvisible=no richtext.inputfieldsvisible=no richtext.tabsvisible=no richtext.returnsvisible=no richtext.spacesvisible=no richtext.inputfieldbackcolor=1073741824 richtext.backcolor=1073741824 richtext.tabbar=yes richtext.rulerbar=yes richtext.toolbar=yes richtext.displayonly=no )
+detail(text="{\rtf1\ansi\deff0{\fonttbl{\f0\froman Tms Rmn;}{\f1\fswiss Arial;}}{\colortbl\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue127;\red0\green127\blue127;\red0\green127\blue0;\red127\green0\blue127;\red127\green0\blue0;\red127\green127\blue0;\red127\green127\blue127;\red192\green192\blue192;}{\info{\creatim\yr2006\mo2\dy23\hr3\min39\sec59}{\version1}{\vern262367}}\paperw12240\paperh15840\margl0\margr1651\margt0\margb0\deftab720\pard\ql{\f1\fs20\cf0\up0\dn0 \loch\af1 Emp Id: }{\field{\*\fldinst{\f1\fs20\cf0\up0\dn0 EMP_ID}}{\fldrslt{\f1\fs20\cf0\up0\dn0 ??}}}{\par}\pard\ql{\f1\fs20\cf0\up0\dn0 \loch\af1 Dept Id: }{\field{\*\fldinst{\f1\fs20\cf0\up0\dn0 DEPT_ID}}{\fldrslt{\f1\fs20\cf0\up0\dn0 ??}}}{\par}\pard\ql{\f1\fs20\cf0\up0\dn0 \loch\af1 Emp Fname: }{\field{\*\fldinst{\f1\fs20\cf0\up0\dn0 EMP_FNAME}}{\fldrslt{\f1\fs20\cf0\up0\dn0 ??}}}{\par}\pard\ql{\f1\fs20\cf0\up0\dn0 \loch\af1 Emp Lname: }{\field{\*\fldinst{\f1\fs20\cf0\up0\dn0 EMP_LNAME}}{\fldrslt{\f1\fs20\cf0\up0\dn0 ??}}}{\par}\pard\ql{\f1\fs20\cf0\up0\dn0 \loch\af1 Street: }{\field{\*\fldinst{\f1\fs20\cf0\up0\dn0 STREET}}{\fldrslt{\f1\fs20\cf0\up0\dn0 ??}}}{\par}\pard\ql{\f1\fs20\cf0\up0\dn0 \loch\af1 City: }{\field{\*\fldinst{\f1\fs20\cf0\up0\dn0 CITY}}{\fldrslt{\f1\fs20\cf0\up0\dn0 ??}}}{\par}\pard\ql{\f1\fs20\cf0\up0\dn0 \loch\af1 State: }{\field{\*\fldinst{\f1\fs20\cf0\up0\dn0 STATE}}{\fldrslt{\f1\fs20\cf0\up0\dn0 ??}}}{\par}\pard\ql}")
+header(text="")
+footer(text="")
+table(column=(type=long update=yes updatewhereclause=yes key=yes name=emp_id dbname="employee.emp_id" )
+ column=(type=long update=yes updatewhereclause=yes name=dept_id dbname="employee.dept_id" )
+ column=(type=char(20) update=yes updatewhereclause=yes name=emp_fname dbname="employee.emp_fname" )
+ column=(type=char(20) update=yes updatewhereclause=yes name=emp_lname dbname="employee.emp_lname" )
+ column=(type=char(40) update=yes updatewhereclause=yes name=street dbname="employee.street" )
+ column=(type=char(20) update=yes updatewhereclause=yes name=city dbname="employee.city" )
+ column=(type=char(2) update=yes updatewhereclause=yes name=state dbname="employee.state" )
+ retrieve="PBSELECT( VERSION(400) TABLE(NAME=~"employee~" ) COLUMN(NAME=~"employee.emp_id~") COLUMN(NAME=~"employee.dept_id~") COLUMN(NAME=~"employee.emp_fname~") COLUMN(NAME=~"employee.emp_lname~") COLUMN(NAME=~"employee.street~") COLUMN(NAME=~"employee.city~") COLUMN(NAME=~"employee.state~")) " update="employee" updatewhere=1 updatekeyinplace=no )
+column(name=emp_id id=1 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" tabsequence=1 format="[general]" )
+column(name=dept_id id=2 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" tabsequence=1 format="[general]" )
+column(name=emp_fname id=3 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" tabsequence=1 format="[general]" )
+column(name=emp_lname id=4 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" tabsequence=1 format="[general]" )
+column(name=street id=5 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" tabsequence=1 format="[general]" )
+column(name=city id=6 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" tabsequence=1 format="[general]" )
+column(name=state id=7 visible="1" lineremove=no multiline=no width.autosize=yes width="0" alignment="0" tabsequence=1 format="[general]" )
+htmltable(border="1" cellpadding="0" cellspacing="0" generatecss="no" nowrap="yes")

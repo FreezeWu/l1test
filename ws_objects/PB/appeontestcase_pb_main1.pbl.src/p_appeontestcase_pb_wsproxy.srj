@@ -1,0 +1,12 @@
+﻿$PBExportHeader$p_appeontestcase_pb_wsproxy.srj
+$PBExportComments$Generated Web Service Proxy Project
+GeneratorID:{1B1DCEE2-E514-11D1-B30A-006008925BD4}GENBC00000000
+
+WSDLLOCATION:http://192.0.3.36/Servlet/AppeonService.asmx?wsdl	
+COMPONENT:0
+PACKAGE:2	WebService.AppeonService	WebService.AuthSoapHeader
+COMMENT:Web Service Proxy Generator
+DEPLOYMENT:..\Auto Test For PB\L1testcase_new\PB\appeontestcase_pb_main.pbl	0	0
+PROJECT:p_appeontestcase_pb_wsproxy
+PREFIX:
+ASSEMBLY:1	1	..\Auto Test For PB\L1testcase_new\AppeonService.dll

@@ -1,0 +1,25 @@
+﻿$PBExportHeader$gf_checkpass.srf
+global type gf_checkpass from function_object
+end type
+
+forward prototypes
+global function boolean gf_checkpass (string as_username, string as_pass)
+end prototypes
+
+global function boolean gf_checkpass (string as_username, string as_pass);//
+string ls_enpass
+long ll_count
+
+ls_enpass = as_pass
+
+select count(*) into :ll_count from t_user where userpass = :ls_enpass and username = :as_username;
+
+if ll_count > 0 then
+	select rightmode,userid into :gi_rightmode,:gi_userid from t_user where userpass = :ls_enpass and username = :as_username;
+	return true
+else
+	return false
+end if
+
+end function
+

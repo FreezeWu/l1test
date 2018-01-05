@@ -1,0 +1,19 @@
+﻿$PBExportHeader$filteroutputstream.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type FilterOutputStream from OutputStream
+end type
+
+type variables
+ protected:
+string FilterOutputStream_javaname= "java.io.FilterOutputStream" 
+end variables
+
+forward prototypes
+ public:
+subroutine  FilterOutputStream( OutputStream OutputStream_1)  alias for "<init>,(Ljava/io/OutputStream;)V"
+subroutine  close() throws IOException alias for "close,()V"
+subroutine  flush() throws IOException alias for "flush,()V"
+subroutine  write( long long_1) throws IOException alias for "write,(I)V"
+subroutine  write( int int_1[]) throws IOException alias for "write,([B)V"
+subroutine  write( int int_1[], long long_2, long long_3) throws IOException alias for "write,([BII)V"
+end prototypes

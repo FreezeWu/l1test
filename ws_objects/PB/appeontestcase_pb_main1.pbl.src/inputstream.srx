@@ -1,0 +1,23 @@
+﻿$PBExportHeader$inputstream.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type InputStream from nonvisualobject
+end type
+
+type variables
+ protected:
+string InputStream_javaname= "java.io.InputStream" 
+end variables
+
+forward prototypes
+ public:
+subroutine  InputStream()  alias for "<init>,()V"
+function long available() throws IOException alias for "available,()I"
+subroutine  close() throws IOException alias for "close,()V"
+subroutine  mark( long long_1)  alias for "mark,(I)V"
+function boolean markSupported()  alias for "markSupported,()Z"
+function long read() throws IOException alias for "read,()I"
+function long read( int int_1[]) throws IOException alias for "read,([B)I"
+function long read( int int_1[], long long_2, long long_3) throws IOException alias for "read,([BII)I"
+subroutine  reset() throws IOException alias for "reset,()V"
+function longlong skip( longlong longlong_1) throws IOException alias for "skip,(J)J"
+end prototypes

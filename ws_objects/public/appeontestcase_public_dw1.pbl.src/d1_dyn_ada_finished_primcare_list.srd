@@ -1,0 +1,62 @@
+﻿$PBExportHeader$d1_dyn_ada_finished_primcare_list.srd
+$PBExportComments$Patient detail information
+release 10.5;
+datawindow(units=0 timer_interval=0 color=1073741824 processing=0 HTMLDW=no print.printername="" print.documentname="" print.orientation = 0 print.margin.left = 110 print.margin.right = 110 print.margin.top = 96 print.margin.bottom = 96 print.paper.source = 0 print.paper.size = 0 print.canusedefaultprinter=yes print.prompt=no print.buttons=no print.preview.buttons=no print.cliptext=no print.overrideprintjob=no print.collate=yes print.preview.outline=yes hidegrayline=no )
+header(height=496 color="536870912" )
+summary(height=1504 color="536870912" )
+footer(height=136 color="536870912" )
+detail(height=80 color="536870912" )
+table(column=(type=number update=yes updatewhereclause=yes key=yes name=primary_care_ada_id dbname="primary_care_ada.primary_care_ada_id" )
+ column=(type=number update=yes updatewhereclause=yes name=facility_id dbname="primary_care_ada.facility_id" )
+ column=(type=number update=yes updatewhereclause=yes name=completed_ind dbname="primary_care_ada.completed_ind" )
+ column=(type=datetime update=yes updatewhereclause=yes name=completed_date dbname="primary_care_ada.completed_date" )
+ column=(type=datetime update=yes updatewhereclause=yes name=started_date dbname="primary_care_ada.started_date" )
+ column=(type=number update=yes updatewhereclause=yes name=entered_by_fac dbname="primary_care_ada.entered_by_fac" )
+ column=(type=char(150) updatewhereclause=yes name=facility_name dbname="facility_name" )
+ column=(type=char(232) updatewhereclause=yes name=submitted_by dbname="submitted_by" )
+ retrieve="SELECT   a.PRIMARY_CARE_ADA_ID          ,
+           a.FACILITY_ID                 ,
+           a.COMPLETED_IND               ,
+           a.COMPLETED_DATE          ,
+           a.STARTED_DATE                 ,
+           a.ENTERED_BY_FAC         ,
+   			(SELECT  InitCap(b.FACILITY_NAME)
+ 			 FROM    COREQUEST_GR_SECURITY.FACILITY b
+			 WHERE   a.FACILITY_ID = b.FACILITY_ID)FACILITY_NAME,
+			(SELECT InitCap(p.person_forenames || ' ' || p.person_surname)
+              FROM 	corequest_gr_security.database_account da,
+               			corequest_gr.person p
+         	WHERE da.person_id = p.person_id
+           	AND da.database_account_id = a.database_account_id)submitted_by
+FROM COREQUEST_GR.PRIMARY_CARE_ADA a
+WHERE	a.FACILITY_ID = CORP.PKG_CORP.F_GET_FACILITY_ID()
+AND		a.COMPLETED_IND = corequest_gr_maracis.code_handler.f_getcodeid('YES', 'YESNO')" update="COREQUEST_GR.PRIMARY_CARE_ADA" updatewhere=0 updatekeyinplace=yes  sort="started_date D " )
+bitmap(band=header filename="M:\PowerBuilder\Resources\Images\Corequest Resources\ADA\ada_header.bmp" x="0" y="8" height="408" width="3529" border="0"  name=p_1 visible="1" )
+compute(band=detail alignment="0" expression="if(isRowNew(),'I',if(isRowModified(),'U','N'))"border="0" color="33554432" x="91" y="188" height="64" width="485" format="[GENERAL]" html.valueishtml="0"  name=dwrowstatus visible="0"  font.face="Arial" font.height="-8" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="134217747" )
+column(band=detail id=6 alignment="0" tabsequence=32766 border="0" color="33554432" x="695" y="200" height="56" width="485" format="[general]" html.valueishtml="0"  name=entered_by_fac visible="0" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Arial" font.height="-8" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
+column(band=detail id=2 alignment="0" tabsequence=32766 border="0" color="33554432" x="1253" y="200" height="56" width="485" format="[general]" html.valueishtml="0"  name=facility_id visible="0" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Arial" font.height="-8" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
+column(band=detail id=4 alignment="0" tabsequence=32766 border="0" color="33554432" x="1920" y="216" height="56" width="485" format="[shortdate] [time]" html.valueishtml="0"  name=completed_date visible="0" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Arial" font.height="-8" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
+column(band=detail id=5 alignment="0" tabsequence=32766 border="0" color="33554432" x="114" y="4" height="68" width="375" format="[shortdate]" html.valueishtml="0"  name=started_date visible="1" editmask.mask="dd/mm/yyyy" editmask.focusrectangle=no  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
+column(band=detail id=8 alignment="0" tabsequence=32766 border="0" color="33554432" x="2409" y="4" height="68" width="1129" format="[general]" html.valueishtml="0"  name=submitted_by visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
+column(band=detail id=7 alignment="0" tabsequence=32766 border="0" color="33554432" x="873" y="4" height="68" width="1129" format="[general]" html.valueishtml="0"  name=facility_name visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no edit.nilisnull=yes  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="1" background.color="553648127" )
+column(band=detail id=3 alignment="0" tabsequence=10 border="5" color="33554432" x="2021" y="4" height="68" width="375" format="[general]" html.valueishtml="0"  name=completed_ind  tag="MARACIS_CODE=YESNO" visible="1" edit.name="dddw_MaracisCode" dddw.name=d_dddw_code dddw.displaycolumn=description dddw.datacolumn=code_id dddw.percentwidth=110 dddw.lines=0 dddw.limit=0 dddw.allowedit=no dddw.useasborder=yes dddw.case=any dddw.nilisnull=yes dddw.vscrollbar=yes dddw.autoretrieve=no  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="0" background.color="1073741824~tif (IsNull(  completed_ind ), RGB(255, 219, 217), 1087434968)" )
+column(band=detail id=1 alignment="0" tabsequence=32766 border="0" color="33554432" x="498" y="4" height="68" width="366" format="[general]" html.valueishtml="0"  name=primary_care_ada_id visible="1" edit.limit=0 edit.case=any edit.focusrectangle=no edit.autoselect=no  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="1073741824" )
+compute(band=detail alignment="1" expression="'Ø'"border="0" color="33554496" x="5" y="4" height="68" width="101" format="[general]" html.valueishtml="0"  name=compute_1 visible="1~tif( currentrow() = getrow(), 1, 0 )"  font.face="Wingdings" font.height="-10" font.weight="400"  font.family="0" font.pitch="2" font.charset="2" background.mode="1" background.color="553648127" )
+bitmap(band=footer filename="M:\PowerBuilder\Resources\Images\Corequest Resources\ADA\ada_footer.bmp" x="0" y="0" height="128" width="3506" border="0"  name=p_2 visible="1" )
+text(band=header alignment="2" text="" border="0" color="33554432" x="5" y="424" height="68" width="105" html.valueishtml="0"  name=t_1 visible="1"  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="32225693" )
+text(band=header alignment="2" text="Date Started" border="0" color="33554432" x="114" y="424" height="68" width="375" html.valueishtml="0"  name=started_date_t visible="1"  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="32225693" )
+text(band=header alignment="2" text="Submitted By" border="0" color="33554432" x="2400" y="424" height="68" width="1138" html.valueishtml="0"  name=submitted_by_t visible="1"  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="32225693" )
+text(band=header alignment="2" text="Completed" border="0" color="33554432" x="2016" y="424" height="68" width="379" html.valueishtml="0"  name=completed_ind_t visible="1"  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="32225693" )
+text(band=header alignment="2" text="ADA Number" border="0" color="33554432" x="494" y="424" height="68" width="375" html.valueishtml="0"  name=primary_care_ada_id_t visible="1"  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="32225693" )
+text(band=header alignment="2" text="Organisation" border="0" color="33554432" x="873" y="424" height="68" width="1138" html.valueishtml="0"  name=facility_name_t visible="1"  font.face="Arial" font.height="-10" font.weight="400"  font.family="2" font.pitch="2" font.charset="0" background.mode="2" background.color="32225693" )
+htmltable(border="1" )
+htmlgen(clientevents="1" clientvalidation="1" clientcomputedfields="1" clientformatting="0" clientscriptable="0" generatejavascript="1" encodeselflinkargs="1" netscapelayers="0" pagingmethod=0 generatedddwframes="1" )
+xhtmlgen() cssgen(sessionspecific="0" )
+xmlgen(inline="0" )
+xsltgen()
+jsgen()
+export.xml(usetemplate="t_xml" headgroups="1" includewhitespace="0" metadatatype=0 savemetadata=0  template=(comment="" encoding="UTF-16LE" name="t_xml" xml="<?xml version=~"1.0~" encoding=~"UTF-16LE~" standalone=~"no~"?><ROWSET><ROW rownum=~"~~tgetrow()~" __pbband=~"detail~"><primary_care_ada_id>primary_care_ada_id</primary_care_ada_id><facility_id>facility_id</facility_id><completed_ind>completed_ind</completed_ind><completed_date>completed_date</completed_date><started_date>started_date</started_date><entered_by_fac>entered_by_fac</entered_by_fac></ROW></ROWSET>"))
+import.xml()
+export.pdf(method=0 distill.custompostscript="0" xslfop.print="0" )
+export.xhtml()
+ 

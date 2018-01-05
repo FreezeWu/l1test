@@ -1,0 +1,78 @@
+﻿$PBExportHeader$collections.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type Collections from nonvisualobject
+end type
+
+type variables
+ protected:
+string Collections_javaname= "java.util.Collections" 
+
+ public:
+indirect List EMPTY_LIST { __set_EMPTY_LIST(*value), __get_EMPTY_LIST() }
+indirect Map EMPTY_MAP { __set_EMPTY_MAP(*value), __get_EMPTY_MAP() }
+indirect Set EMPTY_SET { __set_EMPTY_SET(*value), __get_EMPTY_SET() }
+end variables
+
+forward prototypes
+ private:
+function Set __get_EMPTY_SET()  alias for "R:EMPTY_SET,Ljava/util/Set;"
+subroutine  __set_EMPTY_SET( Set EMPTY_SET)  alias for "W:EMPTY_SET,Ljava/util/Set;"
+function List __get_EMPTY_LIST()  alias for "R:EMPTY_LIST,Ljava/util/List;"
+subroutine  __set_EMPTY_LIST( List EMPTY_LIST)  alias for "W:EMPTY_LIST,Ljava/util/List;"
+function Map __get_EMPTY_MAP()  alias for "R:EMPTY_MAP,Ljava/util/Map;"
+subroutine  __set_EMPTY_MAP( Map EMPTY_MAP)  alias for "W:EMPTY_MAP,Ljava/util/Map;"
+
+ public:
+function boolean addAll( Collection Collection_1, any any_2[])  alias for "addAll,(Ljava/util/Collection;[Ljava/lang/Object;)Z"
+function Queue asLifoQueue( Deque Deque_1)  alias for "asLifoQueue,(Ljava/util/Deque;)Ljava/util/Queue;"
+function long binarySearch( List List_1, any any_2)  alias for "binarySearch,(Ljava/util/List;Ljava/lang/Object;)I"
+function long binarySearch( List List_1, any any_2, Comparator Comparator_3)  alias for "binarySearch,(Ljava/util/List;Ljava/lang/Object;Ljava/util/Comparator;)I"
+function Collection checkedCollection( Collection Collection_1, any any_2)  alias for "checkedCollection,(Ljava/util/Collection;Ljava/lang/Class;)Ljava/util/Collection;"
+function List checkedList( List List_1, any any_2)  alias for "checkedList,(Ljava/util/List;Ljava/lang/Class;)Ljava/util/List;"
+function Map checkedMap( Map Map_1, any any_2, any any_3)  alias for "checkedMap,(Ljava/util/Map;Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/Map;"
+function Set checkedSet( Set Set_1, any any_2)  alias for "checkedSet,(Ljava/util/Set;Ljava/lang/Class;)Ljava/util/Set;"
+function SortedMap checkedSortedMap( SortedMap SortedMap_1, any any_2, any any_3)  alias for "checkedSortedMap,(Ljava/util/SortedMap;Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/SortedMap;"
+function SortedSet checkedSortedSet( SortedSet SortedSet_1, any any_2)  alias for "checkedSortedSet,(Ljava/util/SortedSet;Ljava/lang/Class;)Ljava/util/SortedSet;"
+subroutine  copy( List List_1, List List_2)  alias for "copy,(Ljava/util/List;Ljava/util/List;)V"
+function boolean disjoint( Collection Collection_1, Collection Collection_2)  alias for "disjoint,(Ljava/util/Collection;Ljava/util/Collection;)Z"
+function List emptyList()  alias for "emptyList,()Ljava/util/List;"
+function Map emptyMap()  alias for "emptyMap,()Ljava/util/Map;"
+function Set emptySet()  alias for "emptySet,()Ljava/util/Set;"
+function Enumeration enumeration( Collection Collection_1)  alias for "enumeration,(Ljava/util/Collection;)Ljava/util/Enumeration;"
+subroutine  fill( List List_1, any any_2)  alias for "fill,(Ljava/util/List;Ljava/lang/Object;)V"
+function long frequency( Collection Collection_1, any any_2)  alias for "frequency,(Ljava/util/Collection;Ljava/lang/Object;)I"
+function long indexOfSubList( List List_1, List List_2)  alias for "indexOfSubList,(Ljava/util/List;Ljava/util/List;)I"
+function long lastIndexOfSubList( List List_1, List List_2)  alias for "lastIndexOfSubList,(Ljava/util/List;Ljava/util/List;)I"
+function ArrayList list( Enumeration Enumeration_1)  alias for "list,(Ljava/util/Enumeration;)Ljava/util/ArrayList;"
+function any max( Collection Collection_1)  alias for "max,(Ljava/util/Collection;)Ljava/lang/Object;"
+function any max( Collection Collection_1, Comparator Comparator_2)  alias for "max,(Ljava/util/Collection;Ljava/util/Comparator;)Ljava/lang/Object;"
+function any min( Collection Collection_1)  alias for "min,(Ljava/util/Collection;)Ljava/lang/Object;"
+function any min( Collection Collection_1, Comparator Comparator_2)  alias for "min,(Ljava/util/Collection;Ljava/util/Comparator;)Ljava/lang/Object;"
+function List nCopies( long long_1, any any_2)  alias for "nCopies,(ILjava/lang/Object;)Ljava/util/List;"
+function Set newSetFromMap( Map Map_1)  alias for "newSetFromMap,(Ljava/util/Map;)Ljava/util/Set;"
+function boolean replaceAll( List List_1, any any_2, any any_3)  alias for "replaceAll,(Ljava/util/List;Ljava/lang/Object;Ljava/lang/Object;)Z"
+subroutine  reverse( List List_1)  alias for "reverse,(Ljava/util/List;)V"
+function Comparator reverseOrder()  alias for "reverseOrder,()Ljava/util/Comparator;"
+function Comparator reverseOrder( Comparator Comparator_1)  alias for "reverseOrder,(Ljava/util/Comparator;)Ljava/util/Comparator;"
+subroutine  rotate( List List_1, long long_2)  alias for "rotate,(Ljava/util/List;I)V"
+subroutine  shuffle( List List_1)  alias for "shuffle,(Ljava/util/List;)V"
+subroutine  shuffle( List List_1, Random Random_2)  alias for "shuffle,(Ljava/util/List;Ljava/util/Random;)V"
+function Set singleton( any any_1)  alias for "singleton,(Ljava/lang/Object;)Ljava/util/Set;"
+function List singletonList( any any_1)  alias for "singletonList,(Ljava/lang/Object;)Ljava/util/List;"
+function Map singletonMap( any any_1, any any_2)  alias for "singletonMap,(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/Map;"
+subroutine  sort( List List_1)  alias for "sort,(Ljava/util/List;)V"
+subroutine  sort( List List_1, Comparator Comparator_2)  alias for "sort,(Ljava/util/List;Ljava/util/Comparator;)V"
+subroutine  swap( List List_1, long long_2, long long_3)  alias for "swap,(Ljava/util/List;II)V"
+function Collection synchronizedCollection( Collection Collection_1)  alias for "synchronizedCollection,(Ljava/util/Collection;)Ljava/util/Collection;"
+function List synchronizedList( List List_1)  alias for "synchronizedList,(Ljava/util/List;)Ljava/util/List;"
+function Map synchronizedMap( Map Map_1)  alias for "synchronizedMap,(Ljava/util/Map;)Ljava/util/Map;"
+function Set synchronizedSet( Set Set_1)  alias for "synchronizedSet,(Ljava/util/Set;)Ljava/util/Set;"
+function SortedMap synchronizedSortedMap( SortedMap SortedMap_1)  alias for "synchronizedSortedMap,(Ljava/util/SortedMap;)Ljava/util/SortedMap;"
+function SortedSet synchronizedSortedSet( SortedSet SortedSet_1)  alias for "synchronizedSortedSet,(Ljava/util/SortedSet;)Ljava/util/SortedSet;"
+function Collection unmodifiableCollection( Collection Collection_1)  alias for "unmodifiableCollection,(Ljava/util/Collection;)Ljava/util/Collection;"
+function List unmodifiableList( List List_1)  alias for "unmodifiableList,(Ljava/util/List;)Ljava/util/List;"
+function Map unmodifiableMap( Map Map_1)  alias for "unmodifiableMap,(Ljava/util/Map;)Ljava/util/Map;"
+function Set unmodifiableSet( Set Set_1)  alias for "unmodifiableSet,(Ljava/util/Set;)Ljava/util/Set;"
+function SortedMap unmodifiableSortedMap( SortedMap SortedMap_1)  alias for "unmodifiableSortedMap,(Ljava/util/SortedMap;)Ljava/util/SortedMap;"
+function SortedSet unmodifiableSortedSet( SortedSet SortedSet_1)  alias for "unmodifiableSortedSet,(Ljava/util/SortedSet;)Ljava/util/SortedSet;"
+end prototypes

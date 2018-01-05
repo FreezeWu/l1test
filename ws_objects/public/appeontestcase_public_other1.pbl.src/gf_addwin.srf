@@ -1,0 +1,13 @@
+﻿$PBExportHeader$gf_addwin.srf
+global type gf_addwin from function_object
+end type
+
+forward prototypes
+global subroutine gf_addwin (window as_window)
+end prototypes
+
+global subroutine gf_addwin (window as_window);if isvalid(gw_active) then
+	gw_active.wf_addopen(as_window)
+end if
+end subroutine
+

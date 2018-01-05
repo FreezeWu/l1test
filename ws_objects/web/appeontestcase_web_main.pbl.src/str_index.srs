@@ -1,0 +1,6 @@
+﻿$PBExportHeader$str_index.srs
+global type str_index from structure
+	n_index		index
+	string		name
+end type
+

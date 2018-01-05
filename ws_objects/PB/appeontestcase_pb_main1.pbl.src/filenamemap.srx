@@ -1,0 +1,14 @@
+﻿$PBExportHeader$filenamemap.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type FileNameMap from nonvisualobject
+end type
+
+type variables
+ protected:
+string FileNameMap_javaname= "java.net.FileNameMap" 
+end variables
+
+forward prototypes
+ public:
+function string getContentTypeFor( string string_1)  alias for "getContentTypeFor,(Ljava/lang/String;)Ljava/lang/String;"
+end prototypes

@@ -1,0 +1,29 @@
+﻿$PBExportHeader$java_type.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type java_Type from Enum
+end type
+
+type variables
+ protected:
+string java_Type_javaname= "java.net.Proxy.Type" 
+java_Type i__java_Type__java_Type
+
+ public:
+indirect java_Type DIRECT { __set_DIRECT(*value), __get_DIRECT() }
+indirect java_Type HTTP { __set_HTTP(*value), __get_HTTP() }
+indirect java_Type SOCKS { __set_SOCKS(*value), __get_SOCKS() }
+end variables
+
+forward prototypes
+ private:
+function java_Type __get_DIRECT()  alias for "R:DIRECT,Ljava/net/Proxy$Type;"
+subroutine  __set_DIRECT( java_Type DIRECT)  alias for "W:DIRECT,Ljava/net/Proxy$Type;"
+function java_Type __get_HTTP()  alias for "R:HTTP,Ljava/net/Proxy$Type;"
+subroutine  __set_HTTP( java_Type HTTP)  alias for "W:HTTP,Ljava/net/Proxy$Type;"
+function java_Type __get_SOCKS()  alias for "R:SOCKS,Ljava/net/Proxy$Type;"
+subroutine  __set_SOCKS( java_Type SOCKS)  alias for "W:SOCKS,Ljava/net/Proxy$Type;"
+
+ public:
+function java_Type valueOf( string string_1)  alias for "valueOf,(Ljava/lang/String;)Ljava/net/Proxy$Type;"
+function any values()  alias for "values,()[Ljava/net/Proxy$Type;|java_Type"
+end prototypes

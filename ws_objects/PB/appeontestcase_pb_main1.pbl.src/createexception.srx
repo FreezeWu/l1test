@@ -1,0 +1,15 @@
+﻿$PBExportHeader$createexception.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type CreateException from exception
+end type
+
+type variables
+ protected:
+string CreateException_javaname= "javax.ejb.CreateException" 
+end variables
+
+forward prototypes
+ public:
+subroutine  CreateException()  alias for "<init>,()V"
+subroutine  CreateException( string string_1)  alias for "<init>,(Ljava/lang/String;)V"
+end prototypes

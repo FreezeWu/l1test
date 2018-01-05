@@ -1,0 +1,7 @@
+﻿$PBExportHeader$str_1.srs
+global type str_1 from structure
+	string		v_name
+	integer		i_arg
+	datetime		dt_born
+end type
+

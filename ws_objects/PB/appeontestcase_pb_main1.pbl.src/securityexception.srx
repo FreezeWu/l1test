@@ -1,0 +1,17 @@
+﻿$PBExportHeader$securityexception.srx
+$PBExportComments$Proxy imported from EJB through EJB Proxy generator.
+global type SecurityException from RuntimeException
+end type
+
+type variables
+ protected:
+string SecurityException_javaname= "java.lang.SecurityException" 
+end variables
+
+forward prototypes
+ public:
+subroutine  SecurityException()  alias for "<init>,()V"
+subroutine  SecurityException( string string_1)  alias for "<init>,(Ljava/lang/String;)V"
+subroutine  SecurityException( string string_1, java_Throwable java_Throwable_2)  alias for "<init>,(Ljava/lang/String;Ljava/lang/Throwable;)V"
+subroutine  SecurityException( java_Throwable java_Throwable_1)  alias for "<init>,(Ljava/lang/Throwable;)V"
+end prototypes

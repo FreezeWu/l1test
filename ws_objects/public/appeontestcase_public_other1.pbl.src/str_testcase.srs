@@ -1,0 +1,9 @@
+﻿$PBExportHeader$str_testcase.srs
+$PBExportComments$Structure used to pass information between windows in the employee information system
+global type str_testcase from structure
+	integer		value_int
+	string		value_string
+	boolean		value_boolean
+	datawindow		value_datawindow
+end type
+
